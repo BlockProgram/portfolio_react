@@ -1,32 +1,28 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <header>
+    <div className="header__nav">
+      <a href="/">Home</a>
+      <a
+        href="https://www.linkedin.com/in/bertrand-bazire/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Profile
+      </a>
+      <a href="#projects">Projects</a>
+      <div className="dropdown">
+        <a className="dropdown-trigger" href="/interests">
+          Interests
+        </a>
+        <div className="dropdown-content">
+          <a href="/category/technology">Technology</a>
+          <a href="/category/productivity">Productivity</a>
+          <a href="/category/longevity">Longevity</a>
+        </div>
+      </div>
     </div>
   </header>
 )
