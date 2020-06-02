@@ -4,8 +4,8 @@ import { FaRegCheckCircle } from "react-icons/fa"
 const Roadmap = () => (
   <div className="roadmap__container">
     <p className="roadmap__statement">
-      I've been studying programming full time since November 2019. Take a look
-      at my progress bar below to know what I learnt.
+      I've been studying programming full time since November 2019. The progress
+      bar below summarizes what I learnt.
     </p>
     <div className="roadmap">
       <div className="roadmap__upper-row">
@@ -72,15 +72,7 @@ const Roadmap = () => (
           <p>February-March 2020</p>
         </div>
         <ul className="roadmap__item-text">
-          <li>
-            <a
-              href="https://openclassrooms.com/fr/paths/185-developpeur-web"
-              target="__blank"
-              rel="noreferrer"
-            >
-              2 months OpenClassrooms online bootcamp & more:
-            </a>
-          </li>
+          <li>2 months OpenClassrooms online bootcamp & more:</li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
             <a
@@ -123,7 +115,13 @@ const Roadmap = () => (
           </li>
         </ul>
       </div>
-      <div className="roadmap__middle-row"></div>
+      <div className="roadmap__middle-row">
+        <div className="vertical-line upper"></div>
+        <div className="vertical-line lower"></div>
+        <div className="vertical-line upper "></div>
+        <div className="vertical-line lower"></div>
+        <div className="vertical-line upper"></div>
+      </div>
       <div className="roadmap__lower-row">
         <div className="roadmap__item-date">
           <p>November 2019</p>

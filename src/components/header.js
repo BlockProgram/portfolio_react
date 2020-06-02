@@ -1,10 +1,11 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div className="header__nav">
-      <a href="/">Home</a>
+    <div className="nav header__nav">
+      <Link to="/">Home</Link>
       <a
         href="https://www.linkedin.com/in/bertrand-bazire/"
         target="_blank"
@@ -14,13 +15,13 @@ const Header = ({ siteTitle }) => (
       </a>
       <a href="#projects">Projects</a>
       <div className="dropdown">
-        <a className="dropdown-trigger" href="/interests">
+        <Link className="dropdown-trigger" to="/interests">
           Interests
-        </a>
+        </Link>
         <div className="dropdown-content">
-          <a href="/category/technology">Technology</a>
-          <a href="/category/productivity">Productivity</a>
-          <a href="/category/longevity">Longevity</a>
+          <Link to="/category/technology">Technology</Link>
+          <Link to="/category/productivity">Productivity</Link>
+          <Link to="/category/longevity">Longevity</Link>
         </div>
       </div>
     </div>

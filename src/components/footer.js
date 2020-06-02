@@ -1,9 +1,13 @@
 import React from "react"
+import { Link } from "gatsby"
+import { FaGithub } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
+import { FaEnvelope } from "react-icons/fa"
 
 const Footer = () => (
   <footer>
-    <div className="footer__nav">
-      <a href="/">Home</a>
+    <div className="nav footer__nav">
+      <Link to="/">Home</Link>
       <a
         href="https://www.linkedin.com/in/bertrand-bazire/"
         target="_blank"
@@ -12,7 +16,9 @@ const Footer = () => (
         Profile
       </a>
       <a href="#projects">Projects</a>
-      <a href="/interests">Interests</a>
+      <Link className="dropdown-trigger" to="/interests">
+        Interests
+      </Link>
     </div>
 
     <ul className="social-list">
@@ -22,7 +28,7 @@ const Footer = () => (
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fab fa-github"></i>
+          <FaGithub className="fa-github" />
         </a>
       </li>
       <li>
@@ -31,12 +37,12 @@ const Footer = () => (
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fab fa-linkedin"></i>
+          <FaLinkedin />
         </a>
       </li>
       <li>
         <a href="mailto:bazire.bertrand@gmail.com">
-          <i className="far fa-envelope"></i>
+          <FaEnvelope />
         </a>
       </li>
     </ul>

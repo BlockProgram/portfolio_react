@@ -6,9 +6,9 @@ import { FaEnvelope } from "react-icons/fa"
 const Hero = () => (
   <div className="hero__container">
     <div className="hero__content">
-      <p>
+      <h1>
         <span>Bertrand</span>, Junior Web Developer
-      </p>
+      </h1>
       <ul className="social-list">
         <li>
           <a
