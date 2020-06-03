@@ -164,6 +164,10 @@ header {
   width: 100%;
 }
 
+.nav a:hover {
+  color: #8e2de2;
+}
+
 .header__nav {
   top: 50%;
   min-width: 415px;
@@ -174,51 +178,6 @@ header {
 .header__nav a {
   margin-right: 25px;
   transition: color 0.15s ease-out;
-}
-
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
-
-.nav a:hover,
-dropdown:hover {
-  color: #8e2de2;
-}
-
-.dropdown .dropdown-trigger {
-  background-color: inherit;
-  border: none;
-  font-family: inherit;
-  margin: 0;
-  outline: none;
-}
-
-.dropdown-content {
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
-  display: none;
-  min-width: 160px;
-  top: 100%;
-  position: absolute;
-  z-index: 30;
-}
-.dropdown-content a {
-  display: block;
-  float: none;
-  font-size: 16px;
-  padding: 12px 16px;
-  text-align: left;
-  text-decoration: none;
-  z-index: 30;
-}
-
-.dropdown-content:hover {
-  background-color: #fff;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  background-color: #fff;
 }
 
 footer {
@@ -538,6 +497,7 @@ footer .social-list a:hover {
 .interests__button {
   align-items: center;
   background-color: #e6e6e6;
+  border-color: #e6e6e6;
   border-radius: 10px;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
@@ -549,16 +509,18 @@ footer .social-list a:hover {
   margin: 0 15px;
   width: 120px;
 }
+.interests__button:focus {
+  outline: 0;
+}
 
 .article {
-  background-size: cover;
   border-radius: 20px;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   display: grid;
   grid-template-columns: 15% 85%;
-  height: 475px;
+  height: 460px;
   margin: 0 auto 20px;
   width: 90%;
 }
@@ -586,15 +548,72 @@ footer .social-list a:hover {
 
 .article.art-1 {
   background-image: url(../../images/ai-human.jpeg);
+  background-size: cover;
 }
 .article.art-2 {
-  background-image: url(../../images/efficiency.png);
+  background: url(../../images/efficiency.png) 0% 11%;
+  background-size: cover;
+}
+.article.art-2 .article__content {
+  color: #000;
 }
 .article.art-3 {
-  background-image: url(../../images/human-evolution.jpeg);
+  background: url(../../images/human-evolution.jpeg) 10%;
+  background-size: cover;
 }
-.article:nth-of-type(3) .article__content {
+.article.art-3 .article__content {
   color: #000;
+}
+
+/* POSTS STYLES */
+.post {
+  background-color: #e6e6e6;
+  border-radius: 30px;
+  text-align: justify;
+  margin: 0 12.5%;
+  padding: 40px;
+}
+.post__title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.post__subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.post__main-img {
+  display: block;
+  margin: 0 auto 30px;
+}
+.post__summary.tech {
+  font-size: 1.15rem;
+  margin-bottom: 40px;
+}
+.post p {
+  margin-bottom: 15px;
+}
+.post p span {
+  font-weight: bold;
+}
+.post h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 20px 0 30px;
+}
+.post p a {
+  color: #8e2de2;
+}
+.post__ordered-list li {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+.post__last-sentence {
+  font-size: 1.1rem;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=layout.css.map */

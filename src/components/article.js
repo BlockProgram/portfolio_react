@@ -1,8 +1,9 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const Article = ({ id, category, title, subtitle, image, link }) => (
-  <a
-    href={link}
+  <Link
+    to={link}
     className={"article" + " " + id}
     // style={{
     //   backgroundImage: `url(${image})`,
@@ -13,7 +14,7 @@ const Article = ({ id, category, title, subtitle, image, link }) => (
       <p className="article__title">{title}</p>
       <p className="article__subtitle">{subtitle}</p>
     </div>
-  </a>
+  </Link>
 )
 
 export default Article

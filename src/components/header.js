@@ -14,16 +14,9 @@ const Header = ({ siteTitle }) => (
         Profile
       </a>
       <a href="#projects">Projects</a>
-      <div className="dropdown">
-        <Link className="dropdown-trigger" to="/interests">
-          Interests
-        </Link>
-        <div className="dropdown-content">
-          <Link to="/category/technology">Technology</Link>
-          <Link to="/category/productivity">Productivity</Link>
-          <Link to="/category/longevity">Longevity</Link>
-        </div>
-      </div>
+      <Link className="dropdown-trigger" to="/interests">
+        Interests
+      </Link>
     </div>
   </header>
 )

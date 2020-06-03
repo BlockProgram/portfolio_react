@@ -5,7 +5,7 @@ const articlesData = {
     subtitle: "Technology aka Humanity's greatest inventions",
     category: "Technology",
     image: "../images/ai-human.jpeg",
-    link: "/article/tech-oriented",
+    link: "interests/tech-oriented",
   },
   article2: {
     id: "art-2",
@@ -14,7 +14,7 @@ const articlesData = {
       "Being productive simply means achieving your goals as fast as possible",
     category: "Productivity",
     image: "./images/efficiency.png",
-    link: "/article/achieving-more",
+    link: "interests/achieving-more",
   },
   article3: {
     id: "art-3",
@@ -22,7 +22,7 @@ const articlesData = {
     subtitle: "Maximizing our stay on Earth",
     category: "Longevity",
     image: "../../images/human-evolution.jpeg",
-    link: "/article/extend-lifespan",
+    link: "interests/extend-lifespan",
   },
 }
 
