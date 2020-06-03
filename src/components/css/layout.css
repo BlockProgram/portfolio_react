@@ -166,7 +166,7 @@ header {
 
 .header__nav {
   top: 50%;
-  min-width: 332px;
+  min-width: 415px;
   transform: translate(50%, -50%);
   position: absolute;
   right: 50%;
@@ -319,9 +319,6 @@ footer .social-list a:hover {
   background: linear-gradient(to right, #8e2de2, #4a00e0);
   border: 2px solid #000;
   border-radius: 10px;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   height: 20px;
@@ -340,9 +337,6 @@ footer .social-list a:hover {
 .roadmap__item-text {
   border: 4px solid #8e2de2;
   border-radius: 20px;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   margin: 20px 0;
   padding: 10px;
 }
@@ -456,7 +450,7 @@ footer .social-list a:hover {
 }
 .square__content {
   visibility: hidden;
-  transform: translateY(-100%);
+  transform: translateY(-90%);
   transition: transform 0.25s ease-in-out;
 }
 .square__title {
@@ -529,19 +523,78 @@ footer .social-list a:hover {
 }
 
 /* INTERESTS PAGE STYLES */
-.main {
-  justify-content: center;
+.interests {
   background: #8e2de2;
   background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0);
   background: linear-gradient(to top, #8e2de2, #4a00e0);
-  display: flex;
-  height: 90vh;
-  margin: 0 auto;
-  width: 80%;
+  padding-bottom: 50px;
 }
-.main button {
-  height: 40px;
-  margin-top: 40px;
+.interests__buttons-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 60px;
+}
+.interests__button {
+  align-items: center;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
+  display: flex;
+  font-size: 1.15rem;
+  height: 35px;
+  justify-content: center;
+  margin: 0 15px;
+  width: 120px;
+}
+
+.article {
+  background-size: cover;
+  border-radius: 20px;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: 15% 85%;
+  height: 475px;
+  margin: 0 auto 20px;
+  width: 90%;
+}
+.article__category {
+  background-color: #e6e6e6;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 30px;
+  font-size: 1.15rem;
+  text-align: center;
+  width: 65%;
+}
+.article__content {
+  color: #fff;
+  margin-left: 450px;
+}
+.article__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 10px 0 20px;
+}
+.article__subtitle {
+  font-size: 1.15rem;
+}
+
+.article.art-1 {
+  background-image: url(../../images/ai-human.jpeg);
+}
+.article.art-2 {
+  background-image: url(../../images/efficiency.png);
+}
+.article.art-3 {
+  background-image: url(../../images/human-evolution.jpeg);
+}
+.article:nth-of-type(3) .article__content {
+  color: #000;
 }
 
 /*# sourceMappingURL=layout.css.map */

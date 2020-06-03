@@ -53,11 +53,14 @@ const Projects = () => (
         <div className="square__content">
           <h3 className="square__title">Ecommerce Website</h3>
           <p className="square__text">
-            Project made as part of my OpenClassrooms online bootcamp. It
-            displays furnitures pulled from an Express REST API hosted locally
-            by the backend. You can add products to your cart and order it
-            through a form with validated inputs. I only built the frontend for
-            this project.
+            Project made as part of my{" "}
+            <a href="https://openclassrooms.com/fr/paths/141-web-developer">
+              OpenClassrooms online bootcamp
+            </a>{" "}
+            . It displays furnitures pulled from an Express REST API hosted
+            locally by the backend. You can add products to your cart and order
+            it through a form with validated inputs. I only built the frontend
+            for this project.
           </p>
           <ul className="square__list">
             <div className="square__list-item">
