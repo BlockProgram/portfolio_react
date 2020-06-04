@@ -13,7 +13,7 @@ const articlesData = {
     subtitle:
       "Being productive simply means achieving your goals as fast as possible",
     category: "Productivity",
-    image: "./images/efficiency.png",
+    image: "./images/efficiency.jpg",
     link: "interests/achieving-more",
   },
   article3: {

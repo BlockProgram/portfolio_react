@@ -151,10 +151,6 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
-
 header {
   background-color: #fff;
   font-size: 1.2rem;
@@ -484,8 +480,8 @@ footer .social-list a:hover {
 /* INTERESTS PAGE STYLES */
 .interests {
   background: #8e2de2;
-  background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0);
-  background: linear-gradient(to top, #8e2de2, #4a00e0);
+  background: -webkit-linear-gradient(to bottom, #8e2de2, #4a00e0);
+  background: linear-gradient(to bottom, #8e2de2, #4a00e0);
   padding-bottom: 50px;
 }
 .interests__buttons-container {
@@ -509,6 +505,9 @@ footer .social-list a:hover {
   margin: 0 15px;
   width: 120px;
 }
+.interests__button:hover {
+  cursor: pointer;
+}
 .interests__button:focus {
   outline: 0;
 }
@@ -522,7 +521,7 @@ footer .social-list a:hover {
   grid-template-columns: 15% 85%;
   height: 460px;
   margin: 0 auto 20px;
-  width: 90%;
+  width: 80%;
 }
 .article__category {
   background-color: #e6e6e6;
@@ -551,7 +550,7 @@ footer .social-list a:hover {
   background-size: cover;
 }
 .article.art-2 {
-  background: url(../../images/efficiency.png) 0% 11%;
+  background: url(../../images/efficiency.jpg) 0% 11%;
   background-size: cover;
 }
 .article.art-2 .article__content {
@@ -570,8 +569,8 @@ footer .social-list a:hover {
   background-color: #e6e6e6;
   border-radius: 30px;
   text-align: justify;
-  margin: 0 12.5%;
-  padding: 40px;
+  margin: 0 10%;
+  padding: 40px 70px;
 }
 .post__title {
   font-size: 1.7rem;
@@ -587,10 +586,18 @@ footer .social-list a:hover {
 .post__main-img {
   display: block;
   margin: 0 auto 30px;
+  max-height: 560px;
+  max-width: 100%;
 }
-.post__summary.tech {
+.post__summary.tech, .post__summary.achieve, .post__summary.lifespan {
   font-size: 1.15rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+.post__img {
+  display: block;
+  margin: 30px auto 30px;
+  max-height: 450px;
+  max-width: 100%;
 }
 .post p {
   margin-bottom: 15px;
@@ -601,19 +608,31 @@ footer .social-list a:hover {
 .post h3 {
   font-size: 1.3rem;
   font-weight: bold;
-  margin: 20px 0 30px;
+  margin: 20px 0 25px;
 }
 .post p a {
   color: #8e2de2;
+  margin: 0 4px;
 }
-.post__ordered-list li {
+.post ol li, .post ul li {
   font-size: 1.1rem;
   font-weight: bold;
   margin: 20px 0 10px;
 }
 .post__last-sentence {
-  font-size: 1.1rem;
   margin-top: 30px;
+}
+.post__youtube-video {
+  display: block;
+  margin: 0 auto;
+}
+
+.post .lifespan-exercise-list {
+  list-style: none;
+}
+.post .lifespan-exercise-list li {
+  font-size: 1rem;
+  font-weight: initial;
 }
 
 /*# sourceMappingURL=layout.css.map */

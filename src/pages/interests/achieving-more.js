@@ -3,21 +3,171 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
+import efficiencyImg from "../../images/efficiency.jpg"
+import toDoImg from "../../images/to-do-list.png"
+
 const achievingMore = () => (
   <Layout>
     <SEO title="Tech' Oriented" />
     <div className="post">
-      <h1 className="post__title">Tech' Oriented</h1>
+      <h1 className="post__title">Achieving More</h1>
       <h2 className="post__subtitle">
-        Technology aka Humanity's greatest inventions
+        Being productive simply means achieving your goals as fast as possible
       </h2>
-      <a href="https://i.hurimg.com/i/hdn/75/0x0/5deb806fd3806c0da89e6816.jpeg">
+      <a href="https://tedideas.files.wordpress.com/2020/05/final_08_glennharvey_2020_04_10_flow-state.jpg?w=750">
         <img
           className="post__main-img"
-          src="https://i.hurimg.com/i/hdn/75/0x0/5deb806fd3806c0da89e6816.jpeg"
-          alt="AI"
+          src={efficiencyImg}
+          alt="writer in a state of flow"
         />
       </a>
+
+      <h3 className="post__summary achieve">
+        In this article, I'm going over the best strategies I learned from top
+        entrepreneurs, books and my own experience.
+      </h3>
+
+      <p>
+        Productivity is rightfully a major topic covering all aspects of our
+        lives. Because time is limited, we must maximize its utility.
+      </p>
+
+      <p>
+        The most interesting lessons I've came across in my whole life are from
+        <a
+          href="https://medium.com/@sergefaguet"
+          target="__blank"
+          rel="noreferrer"
+        >
+          Serge Faguet
+        </a>
+        . A serial entrepreneur and biohacker who wrote several priceless
+        articles on Medium the past few years. My favorite one is entitled
+        <a
+          href="https://medium.com/hackernoon/biohack-your-intelligence-now-or-become-obsolete-97cdd15e395f"
+          target="__blank"
+          rel="noreferrer"
+        >
+          "How to biohack your intelligence"
+        </a>
+        . This piece describes in rich detail how to become much "smarter" and
+        thus effective each day.
+      </p>
+
+      <h3>
+        Here are to me the most important habits he recommends for optimal
+        performance:
+      </h3>
+
+      <ol class="list-post-achievingmore">
+        <li>Iterate over and over</li>
+        <p>Notice what you're not doing perfectly and improve. </p>
+        <li>Fix your sleep (7-8 hours)</li>
+        <p>More sleep = more energy, memory... = more productivity</p>
+        <li>
+          Set goals on many time frames (daily, weekly, yearly, ultimate goals)
+        </li>
+        <p>
+          Doing so will help you to stay motivated for long periods of time and
+          will give meaning to your daily tasks.
+        </p>
+        <li>
+          Cut off any distraction when you work, to get into a state of flow
+        </li>
+      </ol>
+
+      <p>
+        There are so many valuable lessons in his articles that I suggest you
+        read it all to achieve greater levels of productivity.
+      </p>
+
+      <a href="https://images.frandroid.com/wp-content/uploads/2015/09/to-do_list.png">
+        <img class="post__img" src={toDoImg} alt="to-do list Simpsons" />
+      </a>
+
+      <h3>
+        Other than that, here are a few more tips coming from various sources:
+      </h3>
+
+      <ul>
+        <li>Use a to-do list</li>
+
+        <p>
+          I really like using to-do lists as well as reminders. It allows me to
+          plan in advance, to prioritize tasks and to never forget anything. My
+          go-to solution is
+          <a
+            href="https://www.pivotaltracker.com/dashboard"
+            target="__blank"
+            rel="noreferrer"
+          >
+            Pivotal Tracker
+          </a>
+          , an agile project management tool usually used for software
+          development but it works fine for your daily tasks too!
+        </p>
+
+        <li>Learn about the state of Flow</li>
+
+        <p>
+          This is certainly the deepest and most fascinating concept that I'm
+          studying recently. You're in a state of flow when you're so focused on
+          what you're doing that you lose sense of time, of self and anything
+          that might cloud your mind during the rest of the day. It happens when
+          you're working on something challenging (particularly when your skills
+          level is close to the challenge level) or when you're watching a cool
+          movie for example.{" "}
+        </p>
+        <p>
+          There is even more to the state of flow, it's a major component of
+          happiness because you feel great during it. To learn more about this
+          essential theory, you can watch{" "}
+          <a
+            href="https://www.ted.com/talks/mihaly_csikszentmihalyi_flow_the_secret_to_happiness"
+            target="__blank"
+            rel="noreferrer"
+          >
+            a TED talk by the man
+          </a>{" "}
+          who named the concept and carry on by reading his book{" "}
+          <a
+            href="https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202"
+            target="__blank"
+            rel="noreferrer"
+          >
+            "Flow: the psychology of optimal experience"
+          </a>
+          .
+        </p>
+
+        <li>Use a pomodoro</li>
+
+        <p>
+          You may be familiar with the{" "}
+          <a
+            href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+            target="__blank"
+            rel="noreferrer"
+          >
+            pomodoro technique
+          </a>
+          , a way of organizing your work schedule by splitting it into blocks.
+          For example, you may concentrate deeply on a task for 35 minutes and
+          then take a break of 5 minutes. It's a great way to stay on track if
+          you're doing something that doesn't put you in a state of flow.
+          <a
+            href="https://domantasp.github.io/Pomotimer/"
+            target="__blank"
+            rel="noreferrer"
+          >
+            Here is the online pomotimer I'm using.
+          </a>
+        </p>
+      </ul>
+
+      <p class="post__last-sentence">
+        Those were my essentials to get more done in less time, happy working!
+      </p>
     </div>
   </Layout>
 )
