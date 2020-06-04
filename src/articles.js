@@ -1,10 +1,14 @@
+import technologyImg from "./images/ai-human.jpeg"
+import efficiencyImg from "./images/efficiency.jpg"
+import longevityImg from "./images/human-evolution.jpeg"
+
 const articlesData = {
   article1: {
     id: "art-1",
     title: "Tech' Oriented",
     subtitle: "Technology aka Humanity's greatest inventions",
     category: "Technology",
-    image: "../images/ai-human.jpeg",
+    image: { technologyImg },
     link: "interests/tech-oriented",
   },
   article2: {
@@ -13,7 +17,7 @@ const articlesData = {
     subtitle:
       "Being productive simply means achieving your goals as fast as possible",
     category: "Productivity",
-    image: "./images/efficiency.jpg",
+    image: { efficiencyImg },
     link: "interests/achieving-more",
   },
   article3: {
@@ -21,7 +25,7 @@ const articlesData = {
     title: "Extend Your Lifespan",
     subtitle: "Maximizing our stay on Earth",
     category: "Longevity",
-    image: "../../images/human-evolution.jpeg",
+    image: { longevityImg },
     link: "interests/extend-lifespan",
   },
 }

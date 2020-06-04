@@ -158,18 +158,21 @@ header {
   width: 100%;
 }
 
+.social-list {
+  list-style: none;
+}
+
 .nav a:hover {
   color: $primary-color;
 }
 
 .header__nav {
   top: 50%;
-  min-width: 415px;
   transform: translate(50%, -50%);
   position: absolute;
   right: 50%;
   & a {
-    margin-right: 25px;
+    margin: 0 12.5px;
     transition: color 0.15s ease-out;
   }
 }
@@ -208,8 +211,8 @@ footer {
   background: #8e2de2;
   background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0);
   background: linear-gradient(to top, #8e2de2, #4a00e0);
-  border-bottom-left-radius: 40% 25%;
-  border-bottom-right-radius: 40% 25%;
+  border-bottom-left-radius: 500px 180px;
+  border-bottom-right-radius: 500px 180px;
   -webkit-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.4);
@@ -225,6 +228,7 @@ footer {
   & h1 {
     color: #fff;
     font-size: 2rem;
+    text-align: center;
     & span {
       color: #000;
     }
@@ -253,6 +257,7 @@ footer {
 
 .roadmap__statement {
   font-size: 1.15rem;
+  margin: 0 15px;
   text-align: center;
 }
 
@@ -289,6 +294,7 @@ footer {
   &__item-text {
     border: 4px solid $primary-color;
     border-radius: 20px;
+    list-style: none;
     margin: 20px 0;
     padding: 10px;
     & li {
@@ -336,8 +342,8 @@ footer {
   background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0);
   background: linear-gradient(to top, #8e2de2, #4a00e0);
   color: #fff;
-  border-top-left-radius: 40% 25%;
-  border-top-right-radius: 40% 25%;
+  border-top-left-radius: 500px 180px;
+  border-top-right-radius: 500px 180px;
   -webkit-box-shadow: 0px -8px 5px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px -8px 5px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px -8px 5px 0px rgba(0, 0, 0, 0.4);
@@ -349,7 +355,7 @@ footer {
     text-transform: uppercase;
   }
   &__statement {
-    margin-top: 40px;
+    margin: 40px 15px;
     font-size: 1.2rem;
   }
 }
@@ -359,7 +365,7 @@ footer {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   gap: 50px;
-  padding: 80px 0 60px;
+  padding: 30px 0 60px;
   place-self: center center;
   width: 85%;
 }
@@ -370,14 +376,11 @@ footer {
   -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  height: 400px;
+  height: 365px;
   width: 100%;
   &.n1 {
     background: url(../../images/fullstack-app.png) center;
     background-size: cover;
-    & .square__list-item {
-      margin-left: 30%;
-    }
   }
   &.n2 {
     background: url(../../images/project5-app.png);
@@ -386,30 +389,25 @@ footer {
   &.n3 {
     background: url(../../images/dashboard-app.png) right;
     background-size: cover;
-    & .square__list-item {
-      margin-left: 40%;
-    }
   }
   &.n4 {
     background: url(../../images/online-cv.png);
     background-size: cover;
-    & .square__link {
-      margin: 80px 30px;
-    }
-    & .square__list-item {
-      margin-left: 40%;
-    }
   }
   &__content {
-    visibility: hidden;
+    display: grid;
+    grid-template-rows: 300px 65px;
+    height: auto;
+    padding-bottom: 10px;
     transform: translateY(-90%);
     transition: transform 0.25s ease-in-out;
+    visibility: hidden;
   }
   &__title {
     color: $secondary-color;
     font-size: 1.3rem;
     font-weight: bold;
-    margin: 15px 0 60px;
+    padding: 15px 0 60px;
     text-transform: uppercase;
   }
   &__text {
@@ -419,13 +417,16 @@ footer {
     }
   }
   &__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    list-style: none;
     margin-bottom: 10px;
   }
   &__list-item {
     display: flex;
-    justify-content: start;
     margin-bottom: 8px;
-    margin-left: 35%;
     & a {
       color: $primary-color;
     }
@@ -441,7 +442,7 @@ footer {
     border-radius: 10px;
     display: inline-block;
     height: 30px;
-    margin: 40px 30px;
+    margin: 10px 15px;
     width: 130px;
     & p {
       text-transform: uppercase;
@@ -526,8 +527,9 @@ footer {
     border-bottom-right-radius: 20px;
     height: 30px;
     font-size: 1.15rem;
+    padding: 0 5px;
     text-align: center;
-    width: 65%;
+    width: 115px;
   }
   &__content {
     color: #fff;
@@ -536,7 +538,7 @@ footer {
   &__title {
     font-size: 1.8rem;
     font-weight: bold;
-    margin: 10px 0 20px;
+    margin: 10px 0 15px;
   }
   &__subtitle {
     font-size: 1.15rem;
@@ -549,7 +551,7 @@ footer {
     background-size: cover;
   }
   &.art-2 {
-    background: url(../../images/efficiency.jpg) 0% 11%;
+    background: url(../../images/efficiency.jpg) top left;
     background-size: cover;
     & .article__content {
       color: #000;
@@ -635,5 +637,311 @@ footer {
   & li {
     font-size: 1rem;
     font-weight: initial;
+  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1250px) {
+  /* HOMEPAGE */
+  .squares-container {
+    width: 90%;
+  }
+
+  .square {
+    &__title {
+      padding: 15px 0 35px;
+    }
+  }
+
+  /* INTERESTS */
+  .article {
+    &__content {
+      margin-left: 370px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  /* HOMEPAGE */
+  .roadmap__lower-row .roadmap__item-text {
+    height: 300px;
+  }
+
+  .squares-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* HOMEPAGE */
+  .hero__content {
+    & h1 {
+      font-size: 1.8rem;
+    }
+    & .social-list {
+      font-size: 1.8rem;
+    }
+  }
+
+  .square__text {
+    margin: 0 15px 40px;
+  }
+
+  /* INTERESTS */
+  .article {
+    height: 380px;
+    &__content {
+      margin-left: 250px;
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  /* INTERESTS */
+  .article {
+    &__content {
+      margin-left: 210px;
+    }
+  }
+}
+
+@media (max-width: 875px) {
+  /* HOMEPAGE */
+  .roadmap {
+    grid-template: none / 1fr 22px 1fr;
+    width: 70%;
+    &__upper-row {
+      grid-template: repeat(5, 1fr) / none;
+    }
+    &__middle-row {
+      grid-template: repeat(5, 1fr) / none;
+      height: auto;
+    }
+    &__lower-row {
+      display: grid;
+      grid-template: repeat(5, 1fr) / none;
+    }
+    &__item-date {
+      margin: 0 20px;
+      place-self: center center;
+    }
+    &__item-date.date-above {
+      place-self: center center;
+    }
+    &__item-text {
+      margin: 0 20px;
+      padding: 10px;
+    }
+  }
+
+  .vertical-line {
+    place-self: center start;
+    transform: rotate(90deg);
+    &.upper {
+      margin-left: -15px;
+    }
+    &.lower {
+      margin-left: 29px;
+    }
+  }
+
+  .projects {
+    &__title {
+      font-size: 1.7rem;
+    }
+    &__statement {
+      font-size: 1.15rem;
+    }
+  }
+
+  .squares-container {
+    grid-template: 1fr / 1fr;
+    gap: 30px;
+    width: 90%;
+  }
+
+  .square {
+    height: 400px;
+    &.n1 {
+      background: url(../../images/fullstack-app.png) top;
+      background-size: cover;
+    }
+    &.n3 {
+      background: url(../../images/dashboard-app.png) bottom right;
+      background-size: cover;
+    }
+    &__text {
+      margin: 0 15px 30px;
+    }
+  }
+
+  /* INTERESTS */
+  .article {
+    &__content {
+      margin-left: 100px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    font-size: 1.15rem;
+  }
+
+  /* HOMEPAGE */
+  .hero__content {
+    & h1 {
+      font-size: 1.6rem;
+      margin: 0 15px;
+    }
+    & .social-list {
+      font-size: 1.6rem;
+      margin-top: 40px;
+      & li {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .roadmap {
+    width: 80%;
+    & .roadmap__statement {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media (max-width: 535px) {
+  /* HOMEPAGE */
+  .hero__container {
+    height: 610px;
+  }
+
+  .roadmap {
+    width: 90%;
+    &__item-text {
+      padding: 5px;
+      & li {
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .projects {
+    &__title {
+      font-size: 1.5rem;
+    }
+    &__statement {
+      font-size: 1.1rem;
+    }
+  }
+
+  .squares-container {
+    padding-top: 0;
+  }
+
+  .square {
+    height: 360px;
+    &__title {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    font-size: 1.1rem;
+  }
+
+  .header__nav a {
+    margin: 0 6px;
+  }
+
+  .roadmap {
+    width: 98%;
+    &__item-date {
+      margin: 0 10px;
+    }
+    &__item-text {
+      margin: 0 10px;
+      padding: 5px;
+      & li:first-child {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .vertical-line {
+    &.upper {
+      height: 12.5px;
+      margin-left: -10px;
+    }
+    &.lower {
+      height: 12px;
+      margin-left: 24px;
+    }
+  }
+
+  .projects__statement span {
+    display: none;
+  }
+
+  .square {
+    height: 730px;
+    width: 100%;
+    &.n1 {
+      background: url(../../images/min-fullstack-app.png) no-repeat;
+      background-size: 100% 365px;
+      &:hover {
+        background: url(../../images/min-fullstack-app.png) no-repeat;
+        background-size: 100% 365px;
+      }
+    }
+    &.n2 {
+      background: url(../../images/min-project5-app.png) no-repeat;
+      background-size: 100% 365px;
+      &:hover {
+        background: url(../../images/min-project5-app.png);
+        background-size: 100% 365px;
+      }
+    }
+    &.n3 {
+      background: url(../../images/min-dashboard-app.png);
+      background-size: 100% 365px;
+      &:hover {
+        background: url(../../images/min-dashboard-app.png);
+        background-size: 100% 365px;
+      }
+    }
+    &.n4 {
+      background: url(../../images/min-online-cv.png);
+      background-size: 100% 365px;
+      &:hover {
+        background: url(../../images/min-online-cv.png);
+        background-size: 100% 365px;
+      }
+    }
+    &__content {
+      background-color: #fff;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      grid-template-rows: 310px 55px;
+      padding-bottom: 0px;
+      transform: translateY(100%);
+      visibility: visible;
+    }
+    &__title {
+      font-size: 1.3rem;
+      padding: 15px 0 15px;
+    }
+    &__link {
+      margin: 15px 10px;
+      width: 110px;
+    }
+  }
+
+  .square:hover .square__content {
+    visibility: visible;
+    transform: translateY(100%);
   }
 }

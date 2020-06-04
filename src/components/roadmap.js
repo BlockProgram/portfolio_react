@@ -167,7 +167,7 @@ const Roadmap = () => (
               target="__blank"
               rel="noreferrer"
             >
-              LearnEnough.com
+              LearnEnough
             </a>
           </li>
           <li>
