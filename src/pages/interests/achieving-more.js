@@ -59,7 +59,7 @@ const achievingMore = () => (
         performance:
       </h3>
 
-      <ol class="list-post-achievingmore">
+      <ol>
         <li>Iterate over and over</li>
         <p>Notice what you're not doing perfectly and improve. </p>
         <li>Fix your sleep (7-8 hours)</li>
@@ -82,7 +82,7 @@ const achievingMore = () => (
       </p>
 
       <a href="https://images.frandroid.com/wp-content/uploads/2015/09/to-do_list.png">
-        <img class="post__img" src={toDoImg} alt="to-do list Simpsons" />
+        <img className="post__img" src={toDoImg} alt="to-do list Simpsons" />
       </a>
 
       <h3>
@@ -165,7 +165,7 @@ const achievingMore = () => (
         </p>
       </ul>
 
-      <p class="post__last-sentence">
+      <p className="post__last-sentence">
         Those were my essentials to get more done in less time, happy working!
       </p>
     </div>

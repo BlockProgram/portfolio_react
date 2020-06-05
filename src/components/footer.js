@@ -15,10 +15,8 @@ const Footer = () => (
       >
         Profile
       </a>
-      <a href="#projects">Projects</a>
-      <Link className="dropdown-trigger" to="/interests">
-        Interests
-      </Link>
+      <Link to="/#projects">Projects</Link>
+      <Link to="/interests">Interests</Link>
     </div>
 
     <ul className="social-list">

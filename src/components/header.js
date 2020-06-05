@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Link } from "gatsby"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
     <div className="nav header__nav">
       <Link to="/">Home</Link>
@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
       >
         Profile
       </a>
-      <a href="#projects">Projects</a>
+      <Link to="/#projects">Projects</Link>
       <Link className="dropdown-trigger" to="/interests">
         Interests
       </Link>

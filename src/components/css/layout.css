@@ -192,7 +192,7 @@ footer .footer__nav {
   margin-top: 20px;
 }
 footer .footer__nav a {
-  margin-right: 15px;
+  margin: 0 7.5px;
   transition: color 0.15s ease-out;
 }
 footer .social-list {
@@ -378,7 +378,7 @@ footer .social-list a:hover {
   -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  height: 365px;
+  height: 355px;
   width: 100%;
 }
 .square.n1 {
@@ -520,9 +520,9 @@ footer .social-list a:hover {
   box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
   display: grid;
   grid-template-columns: 15% 85%;
-  height: 460px;
+  height: 440px;
   margin: 0 auto 20px;
-  width: 80%;
+  width: 75%;
 }
 .article__category {
   background-color: #e6e6e6;
@@ -593,6 +593,7 @@ footer .social-list a:hover {
 }
 .post__summary.tech, .post__summary.achieve, .post__summary.lifespan {
   font-size: 1.15rem;
+  text-align: initial;
   margin-bottom: 30px;
 }
 .post__img {
@@ -611,6 +612,7 @@ footer .social-list a:hover {
   font-size: 1.3rem;
   font-weight: bold;
   margin: 20px 0 25px;
+  text-align: initial;
 }
 .post p a {
   color: #8e2de2;
@@ -619,7 +621,11 @@ footer .social-list a:hover {
 .post ol li, .post ul li {
   font-size: 1.1rem;
   font-weight: bold;
-  margin: 20px 0 10px;
+  margin: 20px 5px 10px;
+  text-align: initial;
+}
+.post ol p, .post ul p {
+  text-align: initial;
 }
 .post__last-sentence {
   margin-top: 30px;
@@ -650,7 +656,7 @@ footer .social-list a:hover {
 
   /* INTERESTS */
   .article__content {
-    margin-left: 370px;
+    margin-left: 310px;
   }
 }
 @media (max-width: 1050px) {
@@ -661,6 +667,17 @@ footer .social-list a:hover {
 
   .squares-container {
     width: 95%;
+  }
+
+  /* POSTS*/
+  .post__title {
+    font-size: 1.5rem;
+  }
+  .post__subtitle {
+    font-size: 1.15rem;
+  }
+  .post h3 {
+    font-size: 1.15rem;
   }
 }
 @media (max-width: 1000px) {
@@ -677,8 +694,14 @@ footer .social-list a:hover {
   }
 
   /* INTERESTS */
+  .interests__button {
+    font-size: 1.1rem;
+    width: 110px;
+  }
+
   .article {
     height: 380px;
+    width: 80%;
   }
   .article__content {
     margin-left: 250px;
@@ -687,7 +710,12 @@ footer .social-list a:hover {
 @media (max-width: 930px) {
   /* INTERESTS */
   .article__content {
-    margin-left: 210px;
+    margin-left: 170px;
+  }
+
+  /* POSTS */
+  .post {
+    margin: 0 7%;
   }
 }
 @media (max-width: 875px) {
@@ -762,6 +790,15 @@ footer .social-list a:hover {
   .article__content {
     margin-left: 100px;
   }
+  .article__title {
+    font-size: 1.6rem;
+  }
+  .article__subtitle {
+    font-size: 1.1rem;
+  }
+  .article__category {
+    font-size: 1.1rem;
+  }
 }
 @media (max-width: 800px) {
   header {
@@ -786,6 +823,63 @@ footer .social-list a:hover {
   }
   .roadmap .roadmap__statement {
     font-size: 1.1rem;
+  }
+
+  .article {
+    height: 340px;
+  }
+
+  /* POSTS*/
+  .post {
+    margin: 0 5%;
+    padding: 40px 50px;
+  }
+  .post__title {
+    font-size: 1.3rem;
+  }
+  .post__subtitle {
+    font-size: 1.1rem;
+  }
+  .post h3 {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 700px) {
+  .interests__button {
+    height: 30px;
+    width: 100px;
+  }
+
+  .article {
+    height: 300px;
+    width: 85%;
+  }
+  .article.art-2 {
+    background: url(../../images/efficiency.jpg) top left;
+    background-size: cover;
+  }
+  .article.art-2 .article__content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    height: 40%;
+    padding: 10px;
+  }
+  .article.art-3 {
+    background: url(../../images/human-evolution.jpeg) bottom right;
+  }
+  .article__content {
+    margin-left: 70px;
+  }
+  .article__category {
+    font-size: 1rem;
+    height: 25px;
+    padding-top: 5px;
+    width: 100px;
+  }
+  .article__title {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 535px) {
@@ -821,6 +915,26 @@ footer .social-list a:hover {
   .square__title {
     font-size: 1.2rem;
   }
+
+  /* INTERESTS */
+  .article {
+    width: 90%;
+  }
+
+  /* POSTS*/
+  .post {
+    margin: 0 3%;
+    padding: 40px 30px;
+  }
+  .post__main-img {
+    max-height: 700px;
+  }
+  .post__summary.achieve, .post__summary.tech, .post__summary.lifespan {
+    font-size: 1.1rem;
+  }
+  .post ol li, .post ul li {
+    margin: 20px 10px 10px;
+  }
 }
 @media (max-width: 450px) {
   header {
@@ -829,6 +943,13 @@ footer .social-list a:hover {
 
   .header__nav a {
     margin: 0 6px;
+  }
+
+  footer {
+    font-size: 1.1rem;
+  }
+  footer .footer__nav a {
+    margin: 0 5px;
   }
 
   .roadmap {
@@ -915,6 +1036,41 @@ footer .social-list a:hover {
   .square:hover .square__content {
     visibility: visible;
     transform: translateY(100%);
+  }
+
+  .interests__button {
+    font-size: 1rem;
+    margin: 0 10px;
+    width: 90px;
+  }
+
+  .article__category {
+    width: 90px;
+  }
+  .article__title {
+    font-size: 1.2rem;
+  }
+  .article__subtitle {
+    font-size: 1rem;
+  }
+  .article.art-1 .article__content, .article.art-2 .article__content, .article.art-3 .article__content {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #fff;
+    height: 50%;
+    padding: 10px;
+  }
+  .article.art-1 .article__content, .article.art-3 .article__content {
+    height: 40%;
+  }
+
+  /* POSTS*/
+  .post {
+    padding: 40px 20px;
+  }
+  .post__main-img {
+    max-height: 900px;
   }
 }
 

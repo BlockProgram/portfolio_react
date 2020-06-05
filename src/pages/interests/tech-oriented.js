@@ -55,7 +55,7 @@ const techOriented = () => (
         today".
       </p>
 
-      <img class="post__img" src={codingImg} alt="programming" />
+      <img className="post__img" src={codingImg} alt="programming" />
 
       <h3>My motivation to learn programming</h3>
 
