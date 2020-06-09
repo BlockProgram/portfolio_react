@@ -137,6 +137,12 @@ $primary-color: #8e2de2;
 $secondary-color: #5044e0;
 $tertiary-color: #7fffd4;
 $light-grey-color: #e6e6e6;
+$dark-grey-color: #6e6e6e;
+
+/* MIXINS */
+@mixin standard-shadow {
+  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.4);
+}
 
 /* GLOBAL STYLES */
 body {
@@ -151,6 +157,7 @@ a {
 
 header {
   background-color: #fff;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
   height: 60px;
   position: relative;
@@ -208,14 +215,11 @@ footer {
 
 /* HOME HERO STYLES */
 .hero__container {
-  background: #8e2de2;
-  background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0);
+  background: $primary-color;
   background: linear-gradient(to top, #8e2de2, #4a00e0);
   border-bottom-left-radius: 500px 180px;
   border-bottom-right-radius: 500px 180px;
-  -webkit-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.5);
   display: flex;
   height: 630px;
   justify-content: center;
@@ -228,9 +232,11 @@ footer {
   & h1 {
     color: #fff;
     font-size: 2rem;
+
     text-align: center;
     & span {
       color: #000;
+      margin-right: 6px;
     }
   }
   & .social-list {
@@ -271,10 +277,9 @@ footer {
     grid-template-columns: repeat(5, 1fr);
   }
   &__middle-row {
-    background: #8e2de2;
-    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
+    background: $primary-color;
     background: linear-gradient(to right, #8e2de2, #4a00e0);
-    border: 2px solid #000;
+    border: 2px solid $dark-grey-color;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -292,7 +297,7 @@ footer {
     margin: 20px 0;
   }
   &__item-text {
-    border: 4px solid $primary-color;
+    border: 4px solid $dark-grey-color;
     border-radius: 20px;
     list-style: none;
     margin: 20px 0;
@@ -317,13 +322,13 @@ footer {
 }
 
 .roadmap__check-icon {
-  color: #377337;
+  color: green;
   font-size: 1.1rem;
   margin-right: 7px;
 }
 
 .vertical-line {
-  background-color: $primary-color;
+  background-color: $dark-grey-color;
   place-self: start center;
   width: 4px;
   &.upper {
@@ -338,15 +343,12 @@ footer {
 
 /* HOME PROJECTS STYLES */
 .projects {
-  background: #8e2de2;
-  background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0);
+  background: $primary-color;
   background: linear-gradient(to top, #8e2de2, #4a00e0);
   color: #fff;
   border-top-left-radius: 500px 180px;
   border-top-right-radius: 500px 180px;
-  -webkit-box-shadow: 0px -8px 5px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px -8px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px -8px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px -6px 5px 0px rgba(0, 0, 0, 0.5);
   display: grid;
   text-align: center;
   &__title {
@@ -373,9 +375,7 @@ footer {
 .square {
   background-color: #fff;
   border-radius: 30px;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
+  @include standard-shadow;
   height: 355px;
   width: 100%;
   &.n1 {
@@ -407,11 +407,11 @@ footer {
     color: $secondary-color;
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 15px 0 60px;
+    padding: 15px 0 50px;
     text-transform: uppercase;
   }
   &__text {
-    margin: 0 25px 40px;
+    margin: 0 25px 30px;
     & a {
       color: $primary-color;
     }
@@ -442,7 +442,7 @@ footer {
     border-radius: 10px;
     display: inline-block;
     height: 30px;
-    margin: 10px 15px;
+    margin: 0 15px;
     width: 130px;
     & p {
       text-transform: uppercase;
@@ -478,9 +478,7 @@ footer {
 
 /* INTERESTS PAGE STYLES */
 .interests {
-  background: #8e2de2;
-  background: -webkit-linear-gradient(to bottom, #8e2de2, #4a00e0);
-  background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+  background: $dark-grey-color;
   padding-bottom: 50px;
   &__buttons-container {
     align-items: center;
@@ -490,12 +488,10 @@ footer {
   }
   &__button {
     align-items: center;
-    background-color: $light-grey-color;
+    background-color: #fff;
     border-color: $light-grey-color;
     border-radius: 10px;
-    -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
+    @include standard-shadow;
     display: flex;
     font-size: 1.15rem;
     height: 35px;
@@ -504,6 +500,7 @@ footer {
     width: 120px;
     &:hover {
       cursor: pointer;
+      color: $primary-color;
     }
     &:focus {
       outline: 0;
@@ -513,18 +510,17 @@ footer {
 
 .article {
   border-radius: 20px;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.4);
+  @include standard-shadow;
   display: grid;
   grid-template-columns: 15% 85%;
   height: 440px;
   margin: 0 auto 20px;
   width: 75%;
   &__category {
-    background-color: $light-grey-color;
+    background-color: $secondary-color;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    color: #fff;
     height: 30px;
     font-size: 1.15rem;
     padding: 0 5px;
@@ -570,8 +566,9 @@ footer {
 .post {
   background-color: $light-grey-color;
   border-radius: 30px;
+  @include standard-shadow;
   text-align: justify;
-  margin: 0 10%;
+  margin: 3% 10%;
   padding: 40px 70px;
   &__title {
     font-size: 1.7rem;
@@ -632,6 +629,7 @@ footer {
   }
   &__last-sentence {
     margin-top: 30px;
+    text-align: initial;
   }
   &__youtube-video {
     display: block;
@@ -792,7 +790,7 @@ footer {
   }
 
   .square {
-    height: 400px;
+    height: 370px;
     &.n1 {
       background: url(../../images/fullstack-app.png) top;
       background-size: cover;
@@ -889,9 +887,6 @@ footer {
         height: 40%;
         padding: 10px;
       }
-    }
-    &.art-3 {
-      background: url(../../images/human-evolution.jpeg) bottom right;
     }
     &__content {
       margin-left: 70px;

@@ -7,7 +7,7 @@ const Hero = () => (
   <div className="hero__container">
     <div className="hero__content">
       <h1>
-        <span>Bertrand</span>, Junior Web Developer
+        <span>Bertrand</span>- Junior Web Developer
       </h1>
       <ul className="social-list">
         <li>
