@@ -16,9 +16,9 @@ const Projects = () => (
           <div className="square__content-text">
             <h3 className="square__title">Full Stack App'</h3>
             <p className="square__text">
-              Social network similar to 9GAG with CRUD functions and cookies
-              based authentification. Users signup and login before posting GIFs
-              and commenting on posts.
+              Social network similar to 9GAG with CRUD functions and
+              cookie-based authentication. Users signup and login before posting
+              GIFs and commenting on posts.
             </p>
             <ul className="square__list">
               <li>
@@ -56,9 +56,9 @@ const Projects = () => (
             <p className="square__text">
               Project made as part of my{" "}
               <a href="https://openclassrooms.com/fr/paths/141-web-developer">
-                OpenClassrooms online bootcamp
+                OpenClassrooms online bootcamp.
               </a>{" "}
-              . It displays furnitures pulled from an Express REST API hosted
+              It displays furnitures pulled from an Express REST API hosted
               locally by the backend. You can add products to your cart and
               order it through a form with validated inputs. I only built the
               frontend for this project.

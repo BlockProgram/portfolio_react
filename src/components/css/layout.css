@@ -254,7 +254,7 @@ footer .social-list a:hover {
 
 /* HOME ROADMAP STYLES */
 .roadmap__container {
-  margin: 30px 0;
+  margin: 30px 0 40px;
 }
 
 .roadmap__statement {
@@ -428,6 +428,7 @@ footer .social-list a:hover {
 }
 .square__list li a {
   color: #8e2de2;
+  margin-right: 4px;
 }
 .square__list-icon {
   color: #5044e0;
@@ -476,7 +477,7 @@ footer .social-list a:hover {
 /* INTERESTS PAGE STYLES */
 .interests {
   background: #6e6e6e;
-  min-height: 540px;
+  min-height: 550px;
   padding-bottom: 50px;
 }
 .interests__buttons-container {
@@ -624,6 +625,9 @@ footer .social-list a:hover {
 .post li p {
   font-size: 1rem;
   font-weight: normal;
+}
+.post ol, .post ul {
+  margin-left: 10px;
 }
 .post ol p, .post ul p {
   text-align: initial;

@@ -257,7 +257,7 @@ footer {
 
 /* HOME ROADMAP STYLES */
 .roadmap__container {
-  margin: 30px 0;
+  margin: 30px 0 40px;
 }
 
 .roadmap__statement {
@@ -429,6 +429,7 @@ footer {
     margin-bottom: 8px;
     & a {
       color: $primary-color;
+      margin-right: 4px;
     }
   }
   &__list-icon {
@@ -479,7 +480,7 @@ footer {
 /* INTERESTS PAGE STYLES */
 .interests {
   background: $dark-grey-color;
-  min-height: 540px;
+  min-height: 550px;
   padding-bottom: 50px;
   &__buttons-container {
     align-items: center;
@@ -630,6 +631,10 @@ footer {
       font-size: 1rem;
       font-weight: normal;
     }
+  }
+  & ol,
+  & ul {
+    margin-left: 10px;
   }
   & ol p,
   & ul p {

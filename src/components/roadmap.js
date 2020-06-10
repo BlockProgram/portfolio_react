@@ -114,7 +114,7 @@ const Roadmap = () => (
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a href="https://javascript.hardcode.rs/">
+            <a href="https://www.udemy.com/course/javascriptleguide/">
               JavaScript guide by Hardcoders
             </a>
           </li>
