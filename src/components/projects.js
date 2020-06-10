@@ -21,28 +21,29 @@ const Projects = () => (
               and commenting on posts.
             </p>
             <ul className="square__list">
-              <div className="square__list-item">
+              <li>
                 <FaAngleRight className="square__list-icon" />
-                <li>Node.js, Express, MySQL</li>
-              </div>
-              <div className="square__list-item">
+                Node.js, Express, MySQL
+              </li>
+
+              <li>
                 <FaAngleRight className="square__list-icon" />
-                <li>
-                  <a href="https://www.npmjs.com/package/bcrypt">Bcrypt, </a>
-                  <a href="https://jwt.io/">Jsonwebtoken, </a>
-                  <a href="https://www.npmjs.com/package/multer">Multer</a>
-                </li>
-              </div>
-              <div className="square__list-item">
-                <FaAngleRight className="square__list-icon" />
-                <li> JavaScript, Sass, EJS</li>
-              </div>
+                <a href="https://www.npmjs.com/package/bcrypt">Bcrypt, </a>
+                <a href="https://jwt.io/">Jsonwebtoken, </a>
+                <a href="https://www.npmjs.com/package/multer">Multer</a>
+              </li>
+
+              <li>
+                {" "}
+                <FaAngleRight className="square__list-icon" /> JavaScript, Sass,
+                EJS
+              </li>
             </ul>
           </div>
           <div className="square__content-links">
             <a
               href="https://github.com/BlockProgram/fullstack_app_openclassrooms"
-              target="_blank"
+              target="__blank"
               rel="noreferrer"
             >
               <div className="square__link repo">
@@ -67,20 +68,21 @@ const Projects = () => (
               frontend for this project.
             </p>
             <ul className="square__list">
-              <div className="square__list-item">
-                <FaAngleRight className="square__list-icon" />
-                <li> AJAX, LocalStorage</li>
-              </div>
-              <div className="square__list-item">
-                <FaAngleRight className="square__list-icon" />
-                <li> JavaScript, CSS, HTML</li>
-              </div>
+              <li>
+                <FaAngleRight className="square__list-icon" /> AJAX,
+                LocalStorage
+              </li>
+
+              <li>
+                <FaAngleRight className="square__list-icon" /> JavaScript, CSS,
+                HTML
+              </li>
             </ul>
           </div>
           <div className="square__content-links">
             <a
               href="https://github.com/BlockProgram/e-commerce_openclassrooms"
-              target="_blank"
+              target="__blank"
               rel="noreferrer"
             >
               <div className="square__link repo">
@@ -100,33 +102,35 @@ const Projects = () => (
               checkboxes' values, dark mode preferences and savings data.
             </p>
             <ul className="square__list">
-              <div className="square__list-item">
-                <FaAngleRight className="square__list-icon" />
-                <li> JavaScript</li>
-              </div>
-              <div className="square__list-item">
-                <FaAngleRight className="square__list-icon" />
-                <li> CSS, HTML</li>
-              </div>
-              <div className="square__list-item">
-                <FaAngleRight className="square__list-icon" />
-                <li> Jekyll</li>
-              </div>
+              <li>
+                {" "}
+                <FaAngleRight className="square__list-icon" /> JavaScript
+              </li>
+
+              <li>
+                {" "}
+                <FaAngleRight className="square__list-icon" /> CSS, HTML
+              </li>
+
+              <li>
+                {" "}
+                <FaAngleRight className="square__list-icon" /> Jekyll
+              </li>
             </ul>
           </div>
           <div className="square__content-links">
-            <a href="https://theblockchainprogrammer.com/">
-              <div
-                className="square__link website"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <a
+              href="https://theblockchainprogrammer.com/"
+              target="__blank"
+              rel="noreferrer"
+            >
+              <div className="square__link website">
                 <p>Website</p>
               </div>
             </a>
             <a
               href="https://github.com/BlockProgram/dashboard"
-              target="_blank"
+              target="__blank"
               rel="noreferrer"
             >
               <div className="square__link repo">
@@ -142,33 +146,38 @@ const Projects = () => (
             <h3 className="square__title">Online CV</h3>
             <p className="square__text">
               Project n°2 of the{" "}
-              <a href="https://openclassrooms.com/fr/paths/141-web-developer">
+              <a
+                href="https://openclassrooms.com/fr/paths/141-web-developer"
+                target="__blank"
+                rel="noreferrer"
+              >
                 'Web Developer' course of OpenClassrooms
               </a>
               . It's a simple responsive CV built with Bootstrap.
             </p>
             <ul className="square__list">
-              <div className="square__list-item">
-                <FaAngleRight className="square__list-icon" />
-                <li> Bootstrap</li>
-              </div>
-              <div className="square__list-item">
-                <FaAngleRight className="square__list-icon" />
-                <li> CSS, HTML</li>
-              </div>
+              <li>
+                {" "}
+                <FaAngleRight className="square__list-icon" /> Bootstrap
+              </li>
+
+              <li>
+                {" "}
+                <FaAngleRight className="square__list-icon" /> CSS, HTML
+              </li>
             </ul>
           </div>
           <div className="square__content-links">
             <a
               href="https://blockprogram.github.io/projet2_openclassrooms/"
-              target="_blank"
+              target="__blank"
               rel="noreferrer"
             >
               <div className="square__link website">
                 <p>Website</p>
               </div>
             </a>
-            <a href="/" target="_blank" rel="noreferrer">
+            <a href="/" target="__blank" rel="noreferrer">
               <div className="square__link repo">
                 <p>Code</p>
               </div>

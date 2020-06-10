@@ -421,11 +421,11 @@ footer .social-list a:hover {
   list-style: none;
   margin-bottom: 10px;
 }
-.square__list-item {
+.square__list li {
   display: flex;
   margin-bottom: 8px;
 }
-.square__list-item a {
+.square__list li a {
   color: #8e2de2;
 }
 .square__list-icon {
