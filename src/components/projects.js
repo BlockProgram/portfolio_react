@@ -43,7 +43,7 @@ const Projects = () => (
           <div className="square__content-links">
             <a
               href="https://github.com/BlockProgram/fullstack_app_openclassrooms"
-              target="__blank"
+              target="_blank"
               rel="noreferrer"
             >
               <div className="square__link repo">
@@ -82,7 +82,7 @@ const Projects = () => (
           <div className="square__content-links">
             <a
               href="https://github.com/BlockProgram/e-commerce_openclassrooms"
-              target="__blank"
+              target="_blank"
               rel="noreferrer"
             >
               <div className="square__link repo">
@@ -121,7 +121,7 @@ const Projects = () => (
           <div className="square__content-links">
             <a
               href="https://theblockchainprogrammer.com/"
-              target="__blank"
+              target="_blank"
               rel="noreferrer"
             >
               <div className="square__link website">
@@ -130,7 +130,7 @@ const Projects = () => (
             </a>
             <a
               href="https://github.com/BlockProgram/dashboard"
-              target="__blank"
+              target="_blank"
               rel="noreferrer"
             >
               <div className="square__link repo">
@@ -148,7 +148,7 @@ const Projects = () => (
               Project n°2 of the{" "}
               <a
                 href="https://openclassrooms.com/fr/paths/141-web-developer"
-                target="__blank"
+                target="_blank"
                 rel="noreferrer"
               >
                 'Web Developer' course of OpenClassrooms
@@ -170,14 +170,14 @@ const Projects = () => (
           <div className="square__content-links">
             <a
               href="https://blockprogram.github.io/projet2_openclassrooms/"
-              target="__blank"
+              target="_blank"
               rel="noreferrer"
             >
               <div className="square__link website">
                 <p>Website</p>
               </div>
             </a>
-            <a href="/" target="__blank" rel="noreferrer">
+            <a href="/" target="_blank" rel="noreferrer">
               <div className="square__link repo">
                 <p>Code</p>
               </div>
