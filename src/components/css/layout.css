@@ -187,7 +187,7 @@ footer {
   font-size: 1.15rem;
   display: flex;
   flex-direction: column;
-  height: 120px;
+  height: 110px;
   text-transform: uppercase;
 }
 footer .footer__nav {
@@ -417,7 +417,7 @@ footer .social-list a:hover {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   list-style: none;
   margin-bottom: 10px;
 }

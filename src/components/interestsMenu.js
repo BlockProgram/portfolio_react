@@ -10,7 +10,6 @@ function Menu({ handleChange }) {
     )
 
     handleChange({ ...filteredArticles })
-    console.log({ ...filteredArticles })
   }
 
   return (
