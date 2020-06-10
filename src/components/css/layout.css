@@ -477,7 +477,7 @@ footer .social-list a:hover {
 /* INTERESTS PAGE STYLES */
 .interests {
   background: #6e6e6e;
-  min-height: 550px;
+  min-height: 680px;
   padding-bottom: 50px;
 }
 .interests__buttons-container {
@@ -706,6 +706,10 @@ footer .social-list a:hover {
   }
 
   /* INTERESTS */
+  .interests {
+    min-height: 550px;
+  }
+
   .interests__button {
     font-size: 1.1rem;
     width: 110px;

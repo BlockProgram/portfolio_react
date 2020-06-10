@@ -480,7 +480,7 @@ footer {
 /* INTERESTS PAGE STYLES */
 .interests {
   background: $dark-grey-color;
-  min-height: 550px;
+  min-height: 680px;
   padding-bottom: 50px;
   &__buttons-container {
     align-items: center;
@@ -725,6 +725,10 @@ footer {
   }
 
   /* INTERESTS */
+  .interests {
+    min-height: 550px;
+  }
+
   .interests__button {
     font-size: 1.1rem;
     width: 110px;
