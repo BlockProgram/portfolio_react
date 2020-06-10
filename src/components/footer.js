@@ -8,33 +8,19 @@ const Footer = () => (
   <footer>
     <div className="nav footer__nav">
       <Link to="/">Home</Link>
-      <a
-        href="https://www.linkedin.com/in/bertrand-bazire/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Profile
-      </a>
+      <a href="https://www.linkedin.com/in/bertrand-bazire/">Profile</a>
       <Link to="/#projects">Projects</Link>
       <Link to="/interests">Interests</Link>
     </div>
 
     <ul className="social-list">
       <li>
-        <a
-          href="https://github.com/BlockProgram"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://github.com/BlockProgram">
           <FaGithub className="fa-github" />
         </a>
       </li>
       <li>
-        <a
-          href="https://www.linkedin.com/in/bertrand-bazire/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://www.linkedin.com/in/bertrand-bazire/">
           <FaLinkedin />
         </a>
       </li>

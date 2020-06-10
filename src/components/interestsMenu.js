@@ -18,19 +18,19 @@ function Menu({ handleChange }) {
         onClick={() => filterArticles("Technology")}
         className="interests__button"
       >
-        <p>Technology</p>
+        Technology
       </button>
       <button
         onClick={() => filterArticles("Productivity")}
         className="interests__button"
       >
-        <p>Productivity</p>
+        Productivity
       </button>
       <button
         onClick={() => filterArticles("Longevity")}
         className="interests__button"
       >
-        <p>Longevity</p>
+        Longevity
       </button>
     </div>
   )

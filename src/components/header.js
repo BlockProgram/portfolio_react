@@ -6,13 +6,7 @@ const Header = () => (
   <header>
     <div className="nav header__nav">
       <Link to="/">Home</Link>
-      <a
-        href="https://www.linkedin.com/in/bertrand-bazire/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Profile
-      </a>
+      <a href="https://www.linkedin.com/in/bertrand-bazire/">Profile</a>
       <Link to="/#projects">Projects</Link>
       <Link className="dropdown-trigger" to="/interests">
         Interests

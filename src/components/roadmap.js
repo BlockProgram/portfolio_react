@@ -13,33 +13,17 @@ const Roadmap = () => (
           <li>Technical sophistication:</li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://www.learnenough.com/command-line-tutorial/basics"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://www.learnenough.com/command-line-tutorial/basics">
               Command line interface
             </a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://www.learnenough.com/text-editor"
-              target="__blank"
-              rel="noreferrer"
-            >
-              Text editors
-            </a>
+            <a href="https://www.learnenough.com/text-editor">Text editors</a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://www.learnenough.com/git"
-              target="__blank"
-              rel="noreferrer"
-            >
-              Git
-            </a>
+            <a href="https://www.learnenough.com/git">Git</a>
           </li>
         </ul>
         <div className="roadmap__item-date date-above">
@@ -49,21 +33,13 @@ const Roadmap = () => (
           <li>Practice time with 2 projects:</li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://github.com/BlockProgram/official"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/BlockProgram/official">
               1st portfolio website
             </a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://theblockchainprogrammer.com/"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://theblockchainprogrammer.com/">
               Productivity dashboard
             </a>
           </li>
@@ -75,41 +51,25 @@ const Roadmap = () => (
           <li>2 months OpenClassrooms online bootcamp & more:</li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://openclassrooms.com/fr/paths/185-developpeur-web"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://openclassrooms.com/fr/paths/185-developpeur-web">
               Bootstrap, Sass, SEO
             </a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://openclassrooms.com/fr/paths/185-developpeur-web"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://openclassrooms.com/fr/paths/185-developpeur-web">
               Cybersecurity (OWASP), JS full stack (Node, Express)
             </a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://openclassrooms.com/fr/paths/185-developpeur-web"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://openclassrooms.com/fr/paths/185-developpeur-web">
               REST APIs, MongoDB, SQL
             </a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://www.udemy.com/course/react-le-guide-complet/"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://www.udemy.com/course/react-le-guide-complet/">
               React, Gatsby, Firebase
             </a>
           </li>
@@ -130,29 +90,15 @@ const Roadmap = () => (
           <li>First languages & tools:</li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://www.learnenough.com/html"
-              target="__blank"
-              rel="noreferrer"
-            >
-              HTML
-            </a>
+            <a href="https://www.learnenough.com/html">HTML</a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://www.learnenough.com/css-and-layout"
-              target="__blank"
-              rel="noreferrer"
-            >
-              CSS{" "}
-            </a>
+            <a href="https://www.learnenough.com/css-and-layout">CSS </a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a href="https://jekyllrb.com/" target="__blank" rel="noreferrer">
-              Jekyll (static site generator)
-            </a>
+            <a href="https://jekyllrb.com/">Jekyll (static site generator)</a>
           </li>
         </ul>
         <div className="roadmap__item-date">
@@ -162,31 +108,19 @@ const Roadmap = () => (
           <li>3 JavaScript courses with many projects:</li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://www.learnenough.com/javascript-tutorial/hello_world"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://www.learnenough.com/javascript-tutorial/hello_world">
               LearnEnough
             </a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://javascript.hardcode.rs/"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://javascript.hardcode.rs/">
               JavaScript guide by Hardcoders
             </a>
           </li>
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
-            <a
-              href="https://vanillawebprojects.com/"
-              target="__blank"
-              rel="noreferrer"
-            >
+            <a href="https://vanillawebprojects.com/">
               20 JS web projects by Traversy Media
             </a>
           </li>

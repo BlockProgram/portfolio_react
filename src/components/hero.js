@@ -11,20 +11,12 @@ const Hero = () => (
       </h1>
       <ul className="social-list">
         <li>
-          <a
-            href="https://github.com/BlockProgram"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/BlockProgram">
             <FaGithub className="fa-github" />
           </a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/bertrand-bazire/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://www.linkedin.com/in/bertrand-bazire/">
             <FaLinkedin />
           </a>
         </li>

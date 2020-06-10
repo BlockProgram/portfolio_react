@@ -61,11 +61,7 @@ const extendLifespan = () => (
       </p>
       <p>
         You can read{" "}
-        <a
-          href="https://www.amazon.fr/Why-We-Sleep-Science-Dreams/dp/0241269067"
-          target="__blank"
-          rel="noreferrer"
-        >
+        <a href="https://www.amazon.fr/Why-We-Sleep-Science-Dreams/dp/0241269067">
           "Why We Sleep"{" "}
         </a>
         if you want to discover all the benefits it has according to science.
@@ -83,13 +79,7 @@ const extendLifespan = () => (
       <p>
         In that context, fasting is approriate and has many benefits such as
         triggering
-        <a
-          href="https://en.wikipedia.org/wiki/Autophagy"
-          target="__blank"
-          rel="noreferrer"
-        >
-          Autophagy
-        </a>
+        <a href="https://en.wikipedia.org/wiki/Autophagy">Autophagy</a>
         which corresponds to the cleaning & renewal of our cells, reducing
         probabilities of various diseases, increasing intelligence and also
         productivity by saving time.
@@ -109,90 +99,82 @@ const extendLifespan = () => (
 
       <h3> My Longevity Mentors</h3>
       <ul>
-        <li>Serge Faguet</li>
-        <p>
-          In first place on my "live longer" list comes Serge Faguet's advices.
-          He's an entrepreneur & biohacker who completely changed my daily life
-          thanks to his
-          <a
-            href="https://medium.com/@sergefaguet"
-            target="__blank"
-            rel="noreferrer"
-          >
-            Medium articles.
-          </a>
-          Optimization at every level is an obsession for him so it's no
-          surprise he adopts the best habits to affect longevity.
-        </p>
-        <li>Peter Attia</li>
-        <p>
-          Serge Faguet's health is monitored by one of best longevity experts on
-          Earth: Dr Peter Attia. He's responsible for many of the great insights
-          Serge has written about so I recommend checking out{" "}
-          <a
-            href=" https://peterattiamd.com/"
-            target="__blank"
-            rel="noreferrer"
-          >
-            his website & podcast.
-          </a>
-        </p>
-        <li>David Sinclair </li>
-        <p>
-          One of the world's most knowledgeable individuals on the subject of
-          longevity. He's a biologist and professor at the Harvard Medical
-          School and has studied aging all his life. It's thanks to scientists
-          like him that we have a shot at curing aging.
-        </p>
-        <p>
-          He recently released a book called{" "}
-          <a
-            href="https://www.amazon.com/Lifespan-Why-Age-Dont-Have-ebook/dp/B07N4C6LGR"
-            target="__blank"
-            rel="noreferrer"
-          >
-            Lifespan: Why We Age - and Why We Don't Have To"
-          </a>{" "}
-          that I plan on reading soon.
-        </p>
-        <li>Aubrey de Grey</li>
-        <p>
-          English author and biomedical gerontologist, he's a major figure in
-          the transhumanism community for his belief that we might find ways to
-          keep humans alive indefinitely. He's also one of the few that
-          popularized the concept of{" "}
-          <a href="https://en.wikipedia.org/wiki/Longevity_escape_velocity">
-            Longevity Escape Velocity
-          </a>{" "}
-          which basically describes a situation where life expectancy increases
-          faster than the time is passing.
-        </p>
-        <iframe
-          title="Aubrey de Grey on defeating death"
-          className="post__youtube-video"
-          width="700"
-          height="400"
-          src="https://www.youtube.com/embed/fp8lFMkenoU"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-        <li>Singularity University</li>
-        <p>
-          To change your perception of the future, Singularity University is THE
-          entity to listen to. The company, that got created by visionaries
-          (Diamandis & Kurzweil), offers educational programs as well as
-          incubation and consultancy services.
-          <a
-            href="https://www.youtube.com/user/singularityu"
-            target="__blank"
-            rel="noreferrer"
-          >
-            Their youtube channel
-          </a>{" "}
-          is a goldmine where you'll learn how great the future is going to be
-          in various sectors such as transportation and in our case health.
-        </p>
+        <li>
+          <h4>Serge Faguet</h4>
+          <p>
+            In first place on my "live longer" list comes Serge Faguet's
+            advices. He's an entrepreneur & biohacker who completely changed my
+            daily life thanks to his
+            <a href="https://medium.com/@sergefaguet">Medium articles.</a>
+            Optimization at every level is an obsession for him so it's no
+            surprise he adopts the best habits to affect longevity.
+          </p>
+        </li>
+
+        <li>
+          <h4>Peter Attia</h4>
+          <p>
+            Serge Faguet's health is monitored by one of best longevity experts
+            on Earth: Dr Peter Attia. He's responsible for many of the great
+            insights Serge has written about so I recommend checking out{" "}
+            <a href=" https://peterattiamd.com/">his website & podcast.</a>
+          </p>
+        </li>
+
+        <li>
+          <h4>David Sinclair</h4>
+          <p>
+            One of the world's most knowledgeable individuals on the subject of
+            longevity. He's a biologist and professor at the Harvard Medical
+            School and has studied aging all his life. It's thanks to scientists
+            like him that we have a shot at curing aging.
+          </p>
+          <p>
+            He recently released a book called{" "}
+            <a href="https://www.amazon.com/Lifespan-Why-Age-Dont-Have-ebook/dp/B07N4C6LGR">
+              Lifespan: Why We Age - and Why We Don't Have To"
+            </a>{" "}
+            that I plan on reading soon.
+          </p>
+        </li>
+
+        <li>
+          <h4>Aubrey de Grey</h4>
+          <p>
+            English author and biomedical gerontologist, he's a major figure in
+            the transhumanism community for his belief that we might find ways
+            to keep humans alive indefinitely. He's also one of the few that
+            popularized the concept of{" "}
+            <a href="https://en.wikipedia.org/wiki/Longevity_escape_velocity">
+              Longevity Escape Velocity
+            </a>{" "}
+            which basically describes a situation where life expectancy
+            increases faster than the time is passing.
+          </p>
+          <iframe
+            title="Aubrey de Grey on defeating death"
+            className="post__youtube-video"
+            src="https://www.youtube.com/embed/fp8lFMkenoU"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </li>
+
+        <li>
+          <h4>Singularity University</h4>
+          <p>
+            To change your perception of the future, Singularity University is
+            THE entity to listen to. The company, that got created by
+            visionaries (Diamandis & Kurzweil), offers educational programs as
+            well as incubation and consultancy services.
+            <a href="https://www.youtube.com/user/singularityu">
+              Their youtube channel
+            </a>{" "}
+            is a goldmine where you'll learn how great the future is going to be
+            in various sectors such as transportation and in our case health.
+          </p>
+        </li>
       </ul>
       <p className="post__last-sentence">
         I hope the article inspired you to improve your health in order to be

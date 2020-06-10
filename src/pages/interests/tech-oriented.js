@@ -68,47 +68,51 @@ const techOriented = () => (
 
       <p>Here are the main reasons I started learning programming:</p>
 
-      <ol className="post__ordered-list">
-        <li> To be in tune with our technological world</li>
-        <p>
-          Tech' is everywhere and its expansion throughout the world is
-          accelerating.
-        </p>
-        <p>
-          As{" "}
-          <a
-            href="https://en.wikipedia.org/wiki/Ray_Kurzweil"
-            target="__blank"
-            rel="noreferrer"
-          >
-            Raymond Kurzweil
-          </a>
-          , famous inventor, futurist and Google engineer, details in his novel
-          <a
-            href="https://www.danielleworld.com/"
-            target="__blank"
-            rel="noreferrer"
-          >
-            "Danielle"
-          </a>
-          , being able to code is a critical skill to become a modern superhero.
-        </p>
-        <li> Being able to create software</li>
-        <p>
-          Using a computer program or an electronic device like a drone is cool
-          but what's cooler is to be capable of creating your own software or
-          device based on your needs and ideas.
-        </p>
-        <li>Great income</li>
-        <p>
-          Money is an important factor when choosing a career. Developers are
-          able to earn quite a lot as employees or freelancers.
-        </p>
-        <li> A nomadic lifestyle</li>
-        <p>
-          It's to me a very crucial aspect concerning web developers and similar
-          positions; you can travel the world and work remotely with ease.
-        </p>
+      <ol>
+        <li>
+          <h4>To be in tune with our technological world</h4>
+          <p>
+            Tech' is everywhere and its expansion throughout the world is
+            accelerating.
+          </p>
+          <p>
+            As{" "}
+            <a href="https://en.wikipedia.org/wiki/Ray_Kurzweil">
+              Raymond Kurzweil
+            </a>
+            , famous inventor, futurist and Google engineer, details in his
+            novel
+            <a href="https://www.danielleworld.com/">"Danielle"</a>, being able
+            to code is a critical skill to become a modern superhero.
+          </p>
+        </li>
+
+        <li>
+          <h4> Being able to create software</h4>
+          <p>
+            Using a computer program or an electronic device like a drone is
+            cool but what's cooler is to be capable of creating your own
+            software or device based on your needs and ideas.
+          </p>
+        </li>
+
+        <li>
+          <h4> Great income</h4>
+
+          <p>
+            Money is an important factor when choosing a career. Developers are
+            able to earn quite a lot as employees or freelancers.
+          </p>
+        </li>
+
+        <li>
+          <h4>A nomadic lifestyle</h4>
+          <p>
+            It's to me a very crucial aspect concerning web developers and
+            similar positions; you can travel the world and work remotely with
+            ease.
+          </p>
+        </li>
       </ol>
 
       <p className="post__last-sentence">

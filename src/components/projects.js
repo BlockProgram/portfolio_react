@@ -41,11 +41,7 @@ const Projects = () => (
             </ul>
           </div>
           <div className="square__content-links">
-            <a
-              href="https://github.com/BlockProgram/fullstack_app_openclassrooms"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/BlockProgram/fullstack_app_openclassrooms">
               <div className="square__link repo">
                 <p>Code</p>
               </div>
@@ -80,11 +76,7 @@ const Projects = () => (
             </ul>
           </div>
           <div className="square__content-links">
-            <a
-              href="https://github.com/BlockProgram/e-commerce_openclassrooms"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/BlockProgram/e-commerce_openclassrooms">
               <div className="square__link repo">
                 <p>Code</p>
               </div>
@@ -119,20 +111,12 @@ const Projects = () => (
             </ul>
           </div>
           <div className="square__content-links">
-            <a
-              href="https://theblockchainprogrammer.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://theblockchainprogrammer.com/">
               <div className="square__link website">
                 <p>Website</p>
               </div>
             </a>
-            <a
-              href="https://github.com/BlockProgram/dashboard"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/BlockProgram/dashboard">
               <div className="square__link repo">
                 <p>Code</p>
               </div>
@@ -146,11 +130,7 @@ const Projects = () => (
             <h3 className="square__title">Online CV</h3>
             <p className="square__text">
               Project n°2 of the{" "}
-              <a
-                href="https://openclassrooms.com/fr/paths/141-web-developer"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://openclassrooms.com/fr/paths/141-web-developer">
                 'Web Developer' course of OpenClassrooms
               </a>
               . It's a simple responsive CV built with Bootstrap.
@@ -168,16 +148,12 @@ const Projects = () => (
             </ul>
           </div>
           <div className="square__content-links">
-            <a
-              href="https://blockprogram.github.io/projet2_openclassrooms/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://blockprogram.github.io/projet2_openclassrooms/">
               <div className="square__link website">
                 <p>Website</p>
               </div>
             </a>
-            <a href="/" target="_blank" rel="noreferrer">
+            <a href="https://github.com/BlockProgram/projet2_openclassrooms">
               <div className="square__link repo">
                 <p>Code</p>
               </div>
