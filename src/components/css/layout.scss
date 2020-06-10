@@ -230,6 +230,7 @@ footer {
   & h1 {
     color: #fff;
     font-size: 2rem;
+    line-height: 1.6;
 
     text-align: center;
     & span {
@@ -243,7 +244,7 @@ footer {
     margin-top: 40px;
     place-self: center;
     & li {
-      margin-right: 30px;
+      margin: 0 15px;
     }
     & a {
       transition: color 0.15s ease-out;
@@ -297,6 +298,7 @@ footer {
   &__item-text {
     border: 4px solid $dark-grey-color;
     border-radius: 20px;
+    box-sizing: border-box;
     list-style: none;
     margin: 20px 0;
     padding: 10px;
@@ -477,6 +479,7 @@ footer {
 /* INTERESTS PAGE STYLES */
 .interests {
   background: $dark-grey-color;
+  min-height: 540px;
   padding-bottom: 50px;
   &__buttons-container {
     align-items: center;
@@ -634,7 +637,7 @@ footer {
   }
   &__last-sentence {
     margin-top: 30px;
-    text-align: initial;
+    text-align: center;
   }
   &__youtube-video {
     display: block;
@@ -649,6 +652,7 @@ footer {
   & li {
     font-size: 1rem;
     font-weight: initial;
+    margin-bottom: 10px;
   }
 }
 
@@ -754,15 +758,20 @@ footer {
     grid-template: none / 1fr 22px 1fr;
     width: 70%;
     &__upper-row {
-      grid-template: repeat(5, 1fr) / none;
+      grid-template: 0.8fr 0.85fr 0.8fr 0.9fr 1fr / none;
     }
     &__middle-row {
-      grid-template: repeat(5, 1fr) / none;
+      background: $primary-color;
+      background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+      grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
       height: auto;
     }
     &__lower-row {
       display: grid;
-      grid-template: repeat(5, 1fr) / none;
+      grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
+      & .roadmap__item-text {
+        height: 100%;
+      }
     }
     &__item-date {
       margin: 0 20px;
@@ -774,6 +783,7 @@ footer {
     &__item-text {
       margin: 0 20px;
       padding: 10px;
+      height: 100%;
     }
   }
 
@@ -782,9 +792,11 @@ footer {
     transform: rotate(90deg);
     &.upper {
       margin-left: -15px;
+      margin-top: 0;
     }
     &.lower {
       margin-left: 29px;
+      margin-top: 0;
     }
   }
 
@@ -849,9 +861,6 @@ footer {
     & .social-list {
       font-size: 1.6rem;
       margin-top: 40px;
-      & li {
-        margin-right: 30px;
-      }
     }
   }
 
@@ -925,7 +934,11 @@ footer {
 @media (max-width: 535px) {
   /* HOMEPAGE */
   .hero__container {
-    height: 610px;
+    height: 580px;
+  }
+
+  .hero__content .social-list li {
+    font-size: 2rem;
   }
 
   .roadmap {
@@ -965,7 +978,7 @@ footer {
 
   /* POSTS*/
   .post {
-    margin: 5% 3%;
+    margin: 8% 0%;
     padding: 40px 30px;
     &__main-img {
       max-height: 700px;
@@ -1028,47 +1041,48 @@ footer {
   }
 
   .square {
-    height: 730px;
+    height: 750px;
     width: 100%;
     &.n1 {
       background: url(../../images/min-fullstack-app.png) no-repeat;
-      background-size: 100% 365px;
+      background-size: 100% 375px;
       &:hover {
         background: url(../../images/min-fullstack-app.png) no-repeat;
-        background-size: 100% 365px;
+        background-size: 100% 375px;
       }
     }
     &.n2 {
       background: url(../../images/min-project5-app.png) no-repeat;
-      background-size: 100% 365px;
+      background-size: 100% 375px;
       &:hover {
         background: url(../../images/min-project5-app.png);
-        background-size: 100% 365px;
+        background-size: 100% 375px;
       }
     }
     &.n3 {
       background: url(../../images/min-dashboard-app.png);
-      background-size: 100% 365px;
+      background-size: 100% 375px;
       &:hover {
         background: url(../../images/min-dashboard-app.png);
-        background-size: 100% 365px;
+        background-size: 100% 375px;
       }
     }
     &.n4 {
       background: url(../../images/min-online-cv.png);
-      background-size: 100% 365px;
+      background-size: 100% 375px;
       &:hover {
         background: url(../../images/min-online-cv.png);
-        background-size: 100% 365px;
+        background-size: 100% 375px;
       }
     }
     &__content {
       background-color: #fff;
+      border-top: 3px solid $secondary-color;
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
-      grid-template-rows: 310px 55px;
+      grid-template-rows: 310px 65px;
       padding-bottom: 0px;
-      transform: translateY(100%);
+      transform: translateY(99%);
       visibility: visible;
     }
     &__title {
@@ -1076,14 +1090,13 @@ footer {
       padding: 15px 0 15px;
     }
     &__link {
-      margin: 15px 10px;
       width: 110px;
     }
   }
 
   .square:hover .square__content {
     visibility: visible;
-    transform: translateY(100%);
+    transform: translateY(99%);
   }
 
   .interests__button {
@@ -1120,7 +1133,7 @@ footer {
 
   /* POSTS*/
   .post {
-    padding: 40px 20px;
+    padding: 40px 15px;
     &__main-img {
       max-height: 900px;
     }
@@ -1128,5 +1141,75 @@ footer {
       height: 210px;
       width: 95%;
     }
+  }
+}
+
+@media (max-width: 330px) {
+  header {
+    & .header__nav a:nth-of-type(3) {
+      display: none;
+    }
+  }
+
+  footer {
+    & .footer__nav a:nth-of-type(3) {
+      display: none;
+    }
+  }
+
+  .roadmap {
+    width: 100%;
+    &__upper-row {
+      grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
+      & .roadmap__item-text {
+        margin: 0 5px 0 0;
+      }
+    }
+    &__middle-row {
+      grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
+    }
+    &__lower-row {
+      grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
+      & .roadmap__item-text {
+        margin: 0 0 0 5px;
+      }
+    }
+  }
+
+  .vertical-line {
+    &.upper {
+      height: 10px;
+      margin-left: -7px;
+    }
+    &.lower {
+      height: 10px;
+      margin-left: 22px;
+    }
+  }
+
+  .square__link {
+    margin: 10px 5px 0;
+  }
+
+  .square.n2,
+  .square.n3 {
+    height: 800px;
+    & .square__content {
+      grid-template-rows: 360px 65px;
+      padding-bottom: 0px;
+      transform: translateY(87.5%);
+      visibility: visible;
+    }
+  }
+
+  /* INTERESTS */
+  .interests__buttons-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .interests__button {
+    margin: 10px;
+    width: 110px;
   }
 }

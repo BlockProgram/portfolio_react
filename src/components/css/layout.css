@@ -229,6 +229,7 @@ footer .social-list a:hover {
 .hero__content h1 {
   color: #fff;
   font-size: 2rem;
+  line-height: 1.6;
   text-align: center;
 }
 .hero__content h1 span {
@@ -242,7 +243,7 @@ footer .social-list a:hover {
   place-self: center;
 }
 .hero__content .social-list li {
-  margin-right: 30px;
+  margin: 0 15px;
 }
 .hero__content .social-list a {
   transition: color 0.15s ease-out;
@@ -295,6 +296,7 @@ footer .social-list a:hover {
 .roadmap__item-text {
   border: 4px solid #6e6e6e;
   border-radius: 20px;
+  box-sizing: border-box;
   list-style: none;
   margin: 20px 0;
   padding: 10px;
@@ -474,6 +476,7 @@ footer .social-list a:hover {
 /* INTERESTS PAGE STYLES */
 .interests {
   background: #6e6e6e;
+  min-height: 540px;
   padding-bottom: 50px;
 }
 .interests__buttons-container {
@@ -627,7 +630,7 @@ footer .social-list a:hover {
 }
 .post__last-sentence {
   margin-top: 30px;
-  text-align: initial;
+  text-align: center;
 }
 .post__youtube-video {
   display: block;
@@ -642,6 +645,7 @@ footer .social-list a:hover {
 .post .lifespan-exercise-list li {
   font-size: 1rem;
   font-weight: initial;
+  margin-bottom: 10px;
 }
 
 /* MEDIA QUERIES */
@@ -733,15 +737,20 @@ footer .social-list a:hover {
     width: 70%;
   }
   .roadmap__upper-row {
-    grid-template: repeat(5, 1fr)/none;
+    grid-template: 0.8fr 0.85fr 0.8fr 0.9fr 1fr/none;
   }
   .roadmap__middle-row {
-    grid-template: repeat(5, 1fr)/none;
+    background: #8e2de2;
+    background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
     height: auto;
   }
   .roadmap__lower-row {
     display: grid;
-    grid-template: repeat(5, 1fr)/none;
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
+  }
+  .roadmap__lower-row .roadmap__item-text {
+    height: 100%;
   }
   .roadmap__item-date {
     margin: 0 20px;
@@ -753,6 +762,7 @@ footer .social-list a:hover {
   .roadmap__item-text {
     margin: 0 20px;
     padding: 10px;
+    height: 100%;
   }
 
   .vertical-line {
@@ -761,9 +771,11 @@ footer .social-list a:hover {
   }
   .vertical-line.upper {
     margin-left: -15px;
+    margin-top: 0;
   }
   .vertical-line.lower {
     margin-left: 29px;
+    margin-top: 0;
   }
 
   .projects__title {
@@ -821,9 +833,6 @@ footer .social-list a:hover {
   .hero__content .social-list {
     font-size: 1.6rem;
     margin-top: 40px;
-  }
-  .hero__content .social-list li {
-    margin-right: 30px;
   }
 
   .roadmap {
@@ -895,7 +904,11 @@ footer .social-list a:hover {
 @media (max-width: 535px) {
   /* HOMEPAGE */
   .hero__container {
-    height: 610px;
+    height: 580px;
+  }
+
+  .hero__content .social-list li {
+    font-size: 2rem;
   }
 
   .roadmap {
@@ -933,7 +946,7 @@ footer .social-list a:hover {
 
   /* POSTS*/
   .post {
-    margin: 5% 3%;
+    margin: 8% 0%;
     padding: 40px 30px;
   }
   .post__main-img {
@@ -990,48 +1003,49 @@ footer .social-list a:hover {
   }
 
   .square {
-    height: 730px;
+    height: 750px;
     width: 100%;
   }
   .square.n1 {
     background: url(../../images/min-fullstack-app.png) no-repeat;
-    background-size: 100% 365px;
+    background-size: 100% 375px;
   }
   .square.n1:hover {
     background: url(../../images/min-fullstack-app.png) no-repeat;
-    background-size: 100% 365px;
+    background-size: 100% 375px;
   }
   .square.n2 {
     background: url(../../images/min-project5-app.png) no-repeat;
-    background-size: 100% 365px;
+    background-size: 100% 375px;
   }
   .square.n2:hover {
     background: url(../../images/min-project5-app.png);
-    background-size: 100% 365px;
+    background-size: 100% 375px;
   }
   .square.n3 {
     background: url(../../images/min-dashboard-app.png);
-    background-size: 100% 365px;
+    background-size: 100% 375px;
   }
   .square.n3:hover {
     background: url(../../images/min-dashboard-app.png);
-    background-size: 100% 365px;
+    background-size: 100% 375px;
   }
   .square.n4 {
     background: url(../../images/min-online-cv.png);
-    background-size: 100% 365px;
+    background-size: 100% 375px;
   }
   .square.n4:hover {
     background: url(../../images/min-online-cv.png);
-    background-size: 100% 365px;
+    background-size: 100% 375px;
   }
   .square__content {
     background-color: #fff;
+    border-top: 3px solid #5044e0;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    grid-template-rows: 310px 55px;
+    grid-template-rows: 310px 65px;
     padding-bottom: 0px;
-    transform: translateY(100%);
+    transform: translateY(99%);
     visibility: visible;
   }
   .square__title {
@@ -1039,13 +1053,12 @@ footer .social-list a:hover {
     padding: 15px 0 15px;
   }
   .square__link {
-    margin: 15px 10px;
     width: 110px;
   }
 
   .square:hover .square__content {
     visibility: visible;
-    transform: translateY(100%);
+    transform: translateY(99%);
   }
 
   .interests__button {
@@ -1077,7 +1090,7 @@ footer .social-list a:hover {
 
   /* POSTS*/
   .post {
-    padding: 40px 20px;
+    padding: 40px 15px;
   }
   .post__main-img {
     max-height: 900px;
@@ -1085,6 +1098,70 @@ footer .social-list a:hover {
   .post__youtube-video {
     height: 210px;
     width: 95%;
+  }
+}
+@media (max-width: 330px) {
+  header .header__nav a:nth-of-type(3) {
+    display: none;
+  }
+
+  footer .footer__nav a:nth-of-type(3) {
+    display: none;
+  }
+
+  .roadmap {
+    width: 100%;
+  }
+  .roadmap__upper-row {
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
+  }
+  .roadmap__upper-row .roadmap__item-text {
+    margin: 0 5px 0 0;
+  }
+  .roadmap__middle-row {
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
+  }
+  .roadmap__lower-row {
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
+  }
+  .roadmap__lower-row .roadmap__item-text {
+    margin: 0 0 0 5px;
+  }
+
+  .vertical-line.upper {
+    height: 10px;
+    margin-left: -7px;
+  }
+  .vertical-line.lower {
+    height: 10px;
+    margin-left: 22px;
+  }
+
+  .square__link {
+    margin: 10px 5px 0;
+  }
+
+  .square.n2,
+.square.n3 {
+    height: 800px;
+  }
+  .square.n2 .square__content,
+.square.n3 .square__content {
+    grid-template-rows: 360px 65px;
+    padding-bottom: 0px;
+    transform: translateY(87.5%);
+    visibility: visible;
+  }
+
+  /* INTERESTS */
+  .interests__buttons-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .interests__button {
+    margin: 10px;
+    width: 110px;
   }
 }
 
