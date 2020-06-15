@@ -28,14 +28,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        fonts: [
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`],
-          },
-        ],
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
