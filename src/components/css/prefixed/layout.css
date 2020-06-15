@@ -142,7 +142,7 @@ a img {
 /* MIXINS */
 /* GLOBAL STYLES */
 body {
-  font-family: "Open Sans"; 
+  font-family: "Open Sans", Arial, Helvetica, sans-serif; 
   line-height: 1.3;
 }
 
