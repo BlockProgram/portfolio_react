@@ -142,7 +142,7 @@ a img {
 /* MIXINS */
 /* GLOBAL STYLES */
 body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans";
   line-height: 1.3;
 }
 
@@ -585,7 +585,9 @@ footer .social-list a:hover {
   max-height: 560px;
   max-width: 100%;
 }
-.post__summary.tech, .post__summary.achieve, .post__summary.lifespan {
+.post__summary.tech,
+.post__summary.achieve,
+.post__summary.lifespan {
   font-size: 1.15rem;
   text-align: initial;
   margin-bottom: 30px;
@@ -626,10 +628,12 @@ footer .social-list a:hover {
   font-size: 1rem;
   font-weight: normal;
 }
-.post ol, .post ul {
+.post ol,
+.post ul {
   margin-left: 10px;
 }
-.post ol p, .post ul p {
+.post ol p,
+.post ul p {
   text-align: initial;
 }
 .post__last-sentence {
@@ -745,17 +749,17 @@ footer .social-list a:hover {
     width: 70%;
   }
   .roadmap__upper-row {
-    grid-template: 0.8fr 0.85fr 0.8fr 0.9fr 1fr/none;
+    grid-template: 0.8fr 0.85fr 0.8fr 0.9fr 1fr / none;
   }
   .roadmap__middle-row {
     background: #8e2de2;
     background: linear-gradient(to bottom, #8e2de2, #4a00e0);
-    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
     height: auto;
   }
   .roadmap__lower-row {
     display: grid;
-    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
   }
   .roadmap__lower-row .roadmap__item-text {
     height: 100%;
@@ -960,10 +964,13 @@ footer .social-list a:hover {
   .post__main-img {
     max-height: 700px;
   }
-  .post__summary.achieve, .post__summary.tech, .post__summary.lifespan {
+  .post__summary.achieve,
+  .post__summary.tech,
+  .post__summary.lifespan {
     font-size: 1.1rem;
   }
-  .post ol li, .post ul li {
+  .post ol li,
+  .post ul li {
     margin: 20px 10px 10px;
   }
 }
@@ -1084,7 +1091,9 @@ footer .social-list a:hover {
   .article__subtitle {
     font-size: 1rem;
   }
-  .article.art-1 .article__content, .article.art-2 .article__content, .article.art-3 .article__content {
+  .article.art-1 .article__content,
+  .article.art-2 .article__content,
+  .article.art-3 .article__content {
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -1092,7 +1101,8 @@ footer .social-list a:hover {
     height: 50%;
     padding: 10px;
   }
-  .article.art-1 .article__content, .article.art-3 .article__content {
+  .article.art-1 .article__content,
+  .article.art-3 .article__content {
     height: 40%;
   }
 
@@ -1121,16 +1131,16 @@ footer .social-list a:hover {
     width: 100%;
   }
   .roadmap__upper-row {
-    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
   }
   .roadmap__upper-row .roadmap__item-text {
     margin: 0 5px 0 0;
   }
   .roadmap__middle-row {
-    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
   }
   .roadmap__lower-row {
-    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr/none;
+    grid-template: 0.8fr 0.8fr 0.8fr 0.9fr 1fr / none;
   }
   .roadmap__lower-row .roadmap__item-text {
     margin: 0 0 0 5px;
@@ -1150,11 +1160,11 @@ footer .social-list a:hover {
   }
 
   .square.n2,
-.square.n3 {
+  .square.n3 {
     height: 800px;
   }
   .square.n2 .square__content,
-.square.n3 .square__content {
+  .square.n3 .square__content {
     grid-template-rows: 360px 65px;
     padding-bottom: 0px;
     transform: translateY(87.5%);
