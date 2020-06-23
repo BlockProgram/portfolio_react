@@ -36,35 +36,68 @@ function Hero() {
       engine: engine,
       options: {
         background: "transparent",
-        width: width,
-        height: 700,
+        width: 1440,
+        height: 650,
         wireframes: false,
       },
     })
 
     // create two boxes and a ground
-    var leftGround = Bodies.rectangle(250, 600, 1330, 40, {
+    var ground1 = Bodies.rectangle(0, 500, 300, 15, {
       isStatic: true,
-      angle: 0.08,
+      angle: 0.7,
+      render: { fillStyle: "transparent" },
     })
-    var rightGround = Bodies.rectangle(1165, 625, 500, 40, {
+    var ground2 = Bodies.rectangle(0, 541, 680, 15, {
       isStatic: true,
-      angle: -0.08,
+      angle: 0.3,
+      render: { fillStyle: "transparent" },
     })
-    var leftWall = Bodies.rectangle(50, 560, 10, 100, { isStatic: true })
-    var rightWall = Bodies.rectangle(1320, 560, 10, 100, {
+    var ground3 = Bodies.rectangle(360, 635, 250, 15, {
       isStatic: true,
-      // render: { fillStyle: "transparent" },
+      angle: 0.18,
+      render: { fillStyle: "transparent" },
+    })
+    var ground4 = Bodies.rectangle(585, 640, 700, 15, {
+      isStatic: true,
+      render: { fillStyle: "transparent" },
+    })
+    var ground5 = Bodies.rectangle(985, 640, 215, 15, {
+      isStatic: true,
+      render: { fillStyle: "transparent" },
+    })
+    var ground6 = Bodies.rectangle(1265, 600, 200, 15, {
+      isStatic: true,
+      angle: -0.3,
+      render: { fillStyle: "transparent" },
+    })
+    var ground7 = Bodies.rectangle(1300, 586, 200, 15, {
+      isStatic: true,
+      angle: -0.35,
+      render: { fillStyle: "transparent" },
+    })
+    var ground8 = Bodies.rectangle(1400, 530, 200, 15, {
+      isStatic: true,
+      angle: -0.6,
+      render: { fillStyle: "transparent" },
+    })
+    var leftWall = Bodies.rectangle(-10, 450, 10, 200, {
+      isStatic: true,
+      render: { fillStyle: "transparent" },
+    })
+    var rightWall = Bodies.rectangle(1450, 450, 10, 200, {
+      isStatic: true,
+      render: { fillStyle: "transparent" },
     })
 
     // add bodies
     var stack = Composites.stack(750, -1600, 10, 20, 0, 0, function (x, y) {
-      return Bodies.circle(x, y, Common.random(10, 25), {
+      return Bodies.circle(x, y, Common.random(10, 20), {
         friction: 0.00001,
         restitution: 0.5,
         density: 0.001,
         render: {
-          fillStyle: ["#e3cc42", "#6e6e6e", "#008000"][
+          fillStyle: ["#e3cc42", "#43c2de", "#c2c2c2"][
             Math.round(Math.random() * 3 - 0.5)
           ],
         },
@@ -88,8 +121,14 @@ function Hero() {
       stack,
       leftWall,
       rightWall,
-      leftGround,
-      rightGround,
+      ground1,
+      ground2,
+      ground3,
+      ground4,
+      ground5,
+      ground6,
+      ground7,
+      ground8,
     ])
 
     // run the engine
@@ -102,7 +141,7 @@ function Hero() {
   return (
     <div className="hero__container">
       <div className="matter-container"></div>
-      {/* <div className="hero__content">
+      <div className="hero__content">
         <h1>
           <span>Bertrand</span>- Junior Web Developer
         </h1>
@@ -123,7 +162,7 @@ function Hero() {
             </a>
           </li>
         </ul>
-      </div> */}
+      </div>
     </div>
   )
 }

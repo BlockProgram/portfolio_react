@@ -38,7 +38,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "prefix": "postcss ./src/components/css/layout.css --use autoprefixer -d ./src/components/css/prefixed/",
+    "prefix": "postcss ./src/components/css/layout.css --use autoprefixer -d ./src/components/css/",
     "preload-fonts": "gatsby-preload-fonts",
     "sass": "sass --watch ./src/components/css/layout.scss:./src/components/css/layout.css",
     "start": "npm run develop",
