@@ -10,8 +10,6 @@ import Matter from "matter-js"
 import MatterWrap from "matter-wrap"
 
 function Hero() {
-  const width = window.innerWidth
-
   useEffect(() => {
     Matter.use(MatterWrap)
 
