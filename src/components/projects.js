@@ -11,7 +11,35 @@ const Projects = () => (
       </span>
     </p>
     <div className="squares-container">
-      <div className="square n1">
+      <div className="square wordpress">
+        <div className="square__content">
+          <div className="square__content-text">
+            <h3 className="square__title">Wordpress Website</h3>
+            <p className="square__text">
+              Webpage of Compound Finance, a fictional company. It was made
+              using DesktopServer and a popular theme.
+            </p>
+            <ul className="square__list">
+              <li>
+                <FaAngleRight className="square__list-icon" />
+                WordPress, custom CSS
+              </li>
+              <li>
+                {" "}
+                <FaAngleRight className="square__list-icon" /> Bluehost, cPanel
+              </li>
+            </ul>
+          </div>
+          <div className="square__content-links">
+            <a href="/">
+              <div className="square__link website">
+                <p>Website</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="square fullstack">
         <div className="square__content">
           <div className="square__content-text">
             <h3 className="square__title">Full Stack App'</h3>
@@ -49,7 +77,7 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      <div className="square n2">
+      <div className="square ecommerce">
         <div className="square__content">
           <div className="square__content-text">
             <h3 className="square__title">Ecommerce Website</h3>
@@ -84,7 +112,7 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      <div className="square n3">
+      <div className="square dashboard">
         <div className="square__content">
           <div className="square__content-text">
             <h3 className="square__title">Productivity Dashboard</h3>
@@ -124,7 +152,7 @@ const Projects = () => (
           </div>
         </div>
       </div>
-      <div className="square n4">
+      <div className="square cv">
         <div className="square__content">
           <div className="square__content-text">
             <h3 className="square__title">Online CV</h3>

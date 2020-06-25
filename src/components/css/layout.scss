@@ -371,7 +371,7 @@ footer {
   color: #000;
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
-  gap: 50px;
+  gap: 40px;
   padding: 30px 0 60px;
   place-self: center center;
   width: 85%;
@@ -383,19 +383,23 @@ footer {
   @include standard-shadow;
   height: 355px;
   width: 100%;
-  &.n1 {
+  &.wordpress {
+    background: url(../../images/wordpress.png) center;
+    background-size: cover;
+  }
+  &.fullstack {
     background: url(../../images/fullstack-app.png) center;
     background-size: cover;
   }
-  &.n2 {
+  &.ecommerce {
     background: url(../../images/project5-app.png);
     background-size: cover;
   }
-  &.n3 {
+  &.dashboard {
     background: url(../../images/dashboard-app.png) right;
     background-size: cover;
   }
-  &.n4 {
+  &.cv {
     background: url(../../images/online-cv.png);
     background-size: cover;
   }
@@ -474,10 +478,11 @@ footer {
   transform: translateY(0);
 }
 
-.square.n1:hover,
-.square.n2:hover,
-.square.n3:hover,
-.square.n4:hover {
+.square.wordpress:hover,
+.square.fullstack:hover,
+.square.ecommerce:hover,
+.square.dashboard:hover,
+.square.cv:hover {
   background-color: #fff;
   background-image: none;
 }
@@ -841,11 +846,15 @@ footer {
 
   .square {
     height: 370px;
-    &.n1 {
+    &.wordpress {
+      background: url(../../images/wordpress.png) top;
+      background-size: cover;
+    }
+    &.fullstack {
       background: url(../../images/fullstack-app.png) top;
       background-size: cover;
     }
-    &.n3 {
+    &.dashboard {
       background: url(../../images/dashboard-app.png) bottom right;
       background-size: cover;
     }
@@ -1067,7 +1076,15 @@ footer {
   .square {
     height: 750px;
     width: 100%;
-    &.n1 {
+    &.wordpress {
+      background: url(../../images/wordpress.png) no-repeat;
+      background-size: 100% 375px;
+      &:hover {
+        background: url(../../images/wordpress.png) no-repeat;
+        background-size: 100% 375px;
+      }
+    }
+    &.fullstack {
       background: url(../../images/min-fullstack-app.png) no-repeat;
       background-size: 100% 375px;
       &:hover {
@@ -1075,7 +1092,7 @@ footer {
         background-size: 100% 375px;
       }
     }
-    &.n2 {
+    &.ecommerce {
       background: url(../../images/min-project5-app.png) no-repeat;
       background-size: 100% 375px;
       &:hover {
@@ -1083,7 +1100,7 @@ footer {
         background-size: 100% 375px;
       }
     }
-    &.n3 {
+    &.dashboard {
       background: url(../../images/min-dashboard-app.png);
       background-size: 100% 375px;
       &:hover {
@@ -1091,7 +1108,7 @@ footer {
         background-size: 100% 375px;
       }
     }
-    &.n4 {
+    &.cv {
       background: url(../../images/min-online-cv.png);
       background-size: 100% 375px;
       &:hover {
@@ -1215,8 +1232,8 @@ footer {
     margin: 10px 5px 0;
   }
 
-  .square.n2,
-  .square.n3 {
+  .square.ecommerce,
+  .square.dashboard {
     height: 800px;
     & .square__content {
       grid-template-rows: 360px 65px;

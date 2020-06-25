@@ -70,8 +70,9 @@ const Roadmap = () => (
           <li>
             <FaRegCheckCircle className="roadmap__check-icon" />
             <a href="https://www.udemy.com/course/react-le-guide-complet/">
-              React, Gatsby, Firebase
+              React, Gatsby
             </a>
+            ,WordPress
           </li>
         </ul>
       </div>

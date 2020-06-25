@@ -1,10 +1,7 @@
-import React, { Fragment, useEffect, useRef } from "react"
+import React, { useEffect } from "react"
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaEnvelope } from "react-icons/fa"
-
-import { Helmet } from "react-helmet"
-import ScriptTag from "react-script-tag"
 
 import Matter from "matter-js"
 import MatterWrap from "matter-wrap"
@@ -89,7 +86,7 @@ function Hero() {
     })
 
     // add bodies
-    var stack = Composites.stack(750, -1600, 10, 20, 0, 0, function (x, y) {
+    var stack = Composites.stack(750, -2000, 10, 20, 30, 0, function (x, y) {
       return Bodies.circle(x, y, Common.random(10, 20), {
         friction: 0.00001,
         restitution: 0.5,
