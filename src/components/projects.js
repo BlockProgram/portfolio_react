@@ -31,7 +31,7 @@ const Projects = () => (
             </ul>
           </div>
           <div className="square__content-links">
-            <a href="/">
+            <a href="https://compoundfinance.tech/">
               <div className="square__link website">
                 <p>Website</p>
               </div>
