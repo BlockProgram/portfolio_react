@@ -723,6 +723,14 @@ footer {
 /* MEDIA QUERIES */
 @media (max-width: 1250px) {
   /* HOMEPAGE */
+  .matter-container {
+    display: none;
+  }
+
+  .roadmap-scrollbtn {
+    display: none;
+  }
+
   .squares-container {
     width: 90%;
   }
@@ -738,12 +746,6 @@ footer {
     &__content {
       margin-left: 310px;
     }
-  }
-}
-
-@media (max-width: 1200px) {
-  .matter-container {
-    display: none;
   }
 }
 
@@ -1299,3 +1301,5 @@ footer {
     width: 110px;
   }
 }
+
+// MEDIA QUERIES : REMOVE BUTTON

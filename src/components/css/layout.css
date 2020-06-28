@@ -713,6 +713,14 @@ footer .social-list a:hover {
 /* MEDIA QUERIES */
 @media (max-width: 1250px) {
   /* HOMEPAGE */
+  .matter-container {
+    display: none;
+  }
+
+  .roadmap-scrollbtn {
+    display: none;
+  }
+
   .squares-container {
     width: 90%;
   }
@@ -724,11 +732,6 @@ footer .social-list a:hover {
   /* INTERESTS */
   .article__content {
     margin-left: 310px;
-  }
-}
-@media (max-width: 1200px) {
-  .matter-container {
-    display: none;
   }
 }
 @media (max-width: 1050px) {
