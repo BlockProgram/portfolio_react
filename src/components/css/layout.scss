@@ -262,12 +262,40 @@ footer {
 
 /* HOME ROADMAP STYLES */
 .roadmap__container {
-  margin: 30px 0 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 40px;
+  position: relative;
+}
+
+.roadmap-scrollbtn {
+  align-self: flex-end;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  width: 40px;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: $secondary-color;
+    cursor: pointer;
+  }
+}
+
+.scroll-arrow {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .roadmap__statement {
   font-size: 1.15rem;
-  margin: 50px 15px 0;
+  margin: 30px 15px 0;
   text-align: center;
 }
 
@@ -283,11 +311,10 @@ footer {
   &__middle-row {
     background: $primary-color;
     background: linear-gradient(to right, #8e2de2, #4a00e0);
-    border: 2px solid $dark-grey-color;
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    height: 20px;
+    height: 22px;
   }
   &__lower-row {
     display: grid;
@@ -338,7 +365,7 @@ footer {
   width: 4px;
   &.upper {
     height: 22.5px;
-    margin-top: -25px;
+    margin-top: -23px;
   }
   &.lower {
     height: 22px;
@@ -675,6 +702,24 @@ footer {
   }
 }
 
+/* 404 PAGE STYLES */
+.container-404 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 78vh;
+  justify-content: center;
+}
+
+.title-404 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.text-404 {
+  font-size: 1.2rem;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1250px) {
   /* HOMEPAGE */
@@ -820,11 +865,11 @@ footer {
     place-self: center start;
     transform: rotate(90deg);
     &.upper {
-      margin-left: -15px;
+      margin-left: -13px;
       margin-top: 0;
     }
     &.lower {
-      margin-left: 29px;
+      margin-left: 31px;
       margin-top: 0;
     }
   }

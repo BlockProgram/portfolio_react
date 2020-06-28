@@ -259,12 +259,39 @@ footer .social-list a:hover {
 
 /* HOME ROADMAP STYLES */
 .roadmap__container {
-  margin: 30px 0 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 40px;
+  position: relative;
+}
+
+.roadmap-scrollbtn {
+  align-self: flex-end;
+  background-color: #8e2de2;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  width: 40px;
+}
+.roadmap-scrollbtn:active, .roadmap-scrollbtn:focus {
+  outline: none;
+}
+.roadmap-scrollbtn:hover {
+  background-color: #5044e0;
+  cursor: pointer;
+}
+
+.scroll-arrow {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 .roadmap__statement {
   font-size: 1.15rem;
-  margin: 50px 15px 0;
+  margin: 30px 15px 0;
   text-align: center;
 }
 
@@ -281,11 +308,10 @@ footer .social-list a:hover {
 .roadmap__middle-row {
   background: #8e2de2;
   background: linear-gradient(to right, #8e2de2, #4a00e0);
-  border: 2px solid #6e6e6e;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  height: 20px;
+  height: 22px;
 }
 .roadmap__lower-row {
   display: grid;
@@ -336,7 +362,7 @@ footer .social-list a:hover {
 }
 .vertical-line.upper {
   height: 22.5px;
-  margin-top: -25px;
+  margin-top: -23px;
 }
 .vertical-line.lower {
   height: 22px;
@@ -666,6 +692,24 @@ footer .social-list a:hover {
   margin-bottom: 10px;
 }
 
+/* 404 PAGE STYLES */
+.container-404 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 78vh;
+  justify-content: center;
+}
+
+.title-404 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.text-404 {
+  font-size: 1.2rem;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 1250px) {
   /* HOMEPAGE */
@@ -797,11 +841,11 @@ footer .social-list a:hover {
     transform: rotate(90deg);
   }
   .vertical-line.upper {
-    margin-left: -15px;
+    margin-left: -13px;
     margin-top: 0;
   }
   .vertical-line.lower {
-    margin-left: 29px;
+    margin-left: 31px;
     margin-top: 0;
   }
 

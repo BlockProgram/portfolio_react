@@ -1,7 +1,5 @@
 import React, { useEffect } from "react"
-import { FaGithub } from "react-icons/fa"
-import { FaLinkedin } from "react-icons/fa"
-import { FaEnvelope } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 
 import Matter from "matter-js"
 import MatterWrap from "matter-wrap"
@@ -13,8 +11,6 @@ function Hero() {
     // module aliases
     var Engine = Matter.Engine,
       Render = Matter.Render,
-      Runner = Matter.Runner,
-      Composite = Matter.Composite,
       Composites = Matter.Composites,
       Common = Matter.Common,
       MouseConstraint = Matter.MouseConstraint,
@@ -32,7 +28,7 @@ function Hero() {
       options: {
         background: "transparent",
         width: 1440,
-        height: 650,
+        height: 640,
         wireframes: false,
       },
     })
@@ -125,6 +121,23 @@ function Hero() {
       ground7,
       ground8,
     ])
+
+    // add mouse control
+    var mouse = Mouse.create(render.canvas),
+      mouseConstraint = MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+          stiffness: 0.2,
+          render: {
+            visible: false,
+          },
+        },
+      })
+
+    World.add(engine.world, mouseConstraint)
+
+    // keep the mouse in sync with rendering
+    render.mouse = mouse
 
     // run the engine
     Engine.run(engine)
